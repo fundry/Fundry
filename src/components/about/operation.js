@@ -12,9 +12,10 @@ const Div = styled.div`
 
 const Header = styled.p`
   color : #0748a8
-  text-align: left
-  padding-left: 5%
-  font-size: 1em
+  text-align: right
+  padding-right: 5%
+  font-size: 1.3em
+  font-weight : bold
 `;
 
 const Contain = styled.div`
@@ -27,7 +28,7 @@ const Text = styled.p``;
 export default function home() {
   return (
     <Div>
-      <Header> Get Started </Header>
+      <Header> GET STARTED </Header>
 
       <Contain>
         <Text> HOW FUNDRY WORKS </Text>
