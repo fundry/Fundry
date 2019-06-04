@@ -1,11 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
-import { Banner } from "./components";
+import { Banner, Faq, Recent, Footer, Legal, About } from "./components";
 
 function App() {
   return (
     <div>
-      <Banner />
+      <Banner /> <br />
+      <About /> <br />
+      <Legal /> <br />
+      <Recent /> <br />
+      <Faq />
+      <Footer />
     </div>
   );
 }
