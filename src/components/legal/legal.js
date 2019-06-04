@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Card } from "react-bootstrap";
+import { Grid, Icon } from "semantic-ui-react";
 
 const Div = styled.div`
   margin-top : 5%
