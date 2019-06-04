@@ -22,6 +22,17 @@ text-align : right
 padding-right : 5%
 `;
 
+const Text = styled.p`
+  text-align: center;
+`;
+
+const Name = styled.p`
+  text-align : center
+  font-size : 1.3em
+  font-weight : bold
+  padding-top : 10px
+`;
+
 export default function home() {
   return (
     <Div>
@@ -30,7 +41,7 @@ export default function home() {
       <Grid stackable celled="internally" columns="equal">
         <Grid.Row>
           <Grid.Column>
-            <Card>
+            <Card style={{ borderRadius: "10px", paddingBottom: "20px" }}>
               <Img
                 src={
                   "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
@@ -38,11 +49,19 @@ export default function home() {
                 loader={<img src={require("../../images/developer.png")} />}
                 unloader={<h1> NOT LOADED </h1>}
               />
+
+              <Name> Anybody A. Anybody</Name>
+              <Text>
+                {" "}
+                Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
+                jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg rgr
+                rgrgrvrdefefdf{" "}
+              </Text>
             </Card>
           </Grid.Column>
 
           <Grid.Column>
-            <Card>
+            <Card style={{ borderRadius: "10px", paddingBottom: "20px" }}>
               <Img
                 src={
                   "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
@@ -50,11 +69,19 @@ export default function home() {
                 loader={<img src={require("../../images/developer.png")} />}
                 unloader={<h1> NOT LOADED </h1>}
               />
+
+              <Name> Anybody A. Anybody</Name>
+              <Text>
+                {" "}
+                Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
+                jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg rgr
+                rgrgrvrdefefdf{" "}
+              </Text>
             </Card>
           </Grid.Column>
 
           <Grid.Column>
-            <Card>
+            <Card style={{ borderRadius: "10px", paddingBottom: "20px" }}>
               <Img
                 src={
                   "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
@@ -62,6 +89,14 @@ export default function home() {
                 loader={<img src={require("../../images/developer.png")} />}
                 unloader={<h1> NOT LOADED </h1>}
               />
+
+              <Name> Anybody A. Anybody</Name>
+              <Text>
+                {" "}
+                Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
+                jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg rgr
+                rgrgrvrdefefdf{" "}
+              </Text>
             </Card>
           </Grid.Column>
         </Grid.Row>

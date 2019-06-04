@@ -1,9 +1,16 @@
 import React from "react";
 import { Container, Grid, Header, List, Segment } from "semantic-ui-react";
 import styled from "styled-components";
+import Message from "./message";
+
+const Div = styled.div`
+  background: linear-gradient(to bottom, #eee, #000);
+`;
 
 export default () => (
-  <>
+  <Div>
+    <Message />
+    <br />
     <Segment
       inverted
       vertical
@@ -47,5 +54,5 @@ export default () => (
         </h5>
       </div>
     </Segment>
-  </>
+  </Div>
 );

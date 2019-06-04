@@ -3,13 +3,27 @@ import styled from "styled-components";
 
 const Div = styled.div`
   width: 100%
-  background: blue
+  background: #f2f5ff
+  height : 20vh
+`;
+
+const Title = styled.p`
+font-weight : bold
+font-size : 1.3em
+text-align : right
+padding-right : 5%
+`;
+
+const Text = styled.h4`
+  text-align :  center
+  padding-top : 5% 
 `;
 
 export default function home() {
   return (
     <Div>
-      <h1> RECENT PROJECTS </h1>
+      <Title> PROJECTS</Title>
+      <Text> No Recent Projects Yet </Text>
     </Div>
   );
 }
