@@ -1,31 +1,37 @@
 {
-  "name": "creatify",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "creatify",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-scripts": "3.0.1",
+		"react-bootstrap": "^1.0.0-beta.8",
+		"react-helmet": "^5.2.1",
+		"react-responsive-carousel": "^3.1.49",
+		"styled-components": "^4.2.0",
+		"styled-flex-component": "^3.0.0",
+		"semantic-ui-css": "^2.4.1",
+		"semantic-ui-react": "^0.84.0",
+		"husky": "^2.3.0",
+		"react-kawaii": "^0.12.0"
+	},
+	"devDependencies": {
+		"babel-plugin-styled-components": "^1.8.0",
+		"prettier": "1.16.4",
+		"pretty-quick": "1.10.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [">0.2%", "not dead", "not op_mini all"],
+		"development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+	}
 }
