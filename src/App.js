@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Banner /> <br />
-      <About /> <br />
+      <About />
       <Legal /> <br />
       <Recent /> <br />
       <Faq />

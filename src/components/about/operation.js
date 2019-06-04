@@ -1,17 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import Operation from "./operation";
 
 const Div = styled.div`
-  width: 100%
-  background: transparent
+  width: 95%
+  margin-left: 2%
+  margin-right: 2%
+  background: #f4f8fc
+  padding-top: 3%
+  padding-bottom: 5%
 `;
 
 const Header = styled.p`
   color : #0748a8
-  text-align: center
-  font-weight: bold
-  font-size: 2em
+  text-align: left
+  padding-left: 5%
+  font-size: 1em
 `;
 
 const Contain = styled.div`
@@ -24,16 +27,11 @@ const Text = styled.p``;
 export default function home() {
   return (
     <Div>
-      <Header> / " Providing a launchpad for ideas " / </Header>
+      <Header> Get Started </Header>
 
       <Contain>
-        <Text> EXPLANATION OF FUNDRY </Text>
+        <Text> HOW FUNDRY WORKS </Text>
       </Contain>
-      <br />
-
-      <div>
-        <Operation />
-      </div>
     </Div>
   );
 }
