@@ -46,8 +46,7 @@ export default function home() {
       <Sidebar initialPose="exit" pose="enter">
         <Header>
           <SplitText charPoses={charPoses}>
-            {" "}
-            " Providing a launchpad for ideas "{" "}
+            " Providing a launchpad for ideas "
           </SplitText>
         </Header>
       </Sidebar>

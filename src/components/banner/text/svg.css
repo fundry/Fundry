@@ -28,6 +28,15 @@ svg {
 #textClip text:nth-of-type(n + 7):nth-of-type(-n + 9) {
   animation: showThird 12s infinite;
 }
+#textClip text:nth-of-type(n + 10):nth-of-type(-n + 12) {
+  animation: showFourth 12s infinite;
+}
+#textClip text:nth-of-type(n + 13):nth-of-type(-n + 15) {
+  animation: showFifth 12s infinite;
+}
+#textClip text:nth-of-type(n + 16):nth-of-type(-n + 18) {
+  animation: showThird 12s infinite;
+}
 
 @keyframes pulse {
   /* Rotating it along with the scale makes it a little bit more fancy */
@@ -63,6 +72,28 @@ svg {
   }
 }
 @keyframes showThird {
+  66.0001%,
+  99.999% {
+    opacity: 1;
+  }
+  0%,
+  66%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showFourth {
+  66.0001%,
+  99.999% {
+    opacity: 1;
+  }
+  0%,
+  66%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showFifth {
   66.0001%,
   99.999% {
     opacity: 1;

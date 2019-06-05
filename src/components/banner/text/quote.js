@@ -7,15 +7,23 @@ export default function home() {
     <>
       <svg viewbox="0 0 700 225">
         <clipPath id="textClip" class="filled-heading">
-          <text y="70">Build </text>
+          <text y="70">Review </text>
           <text y="140" />
           <text y="210">+Innovators</text>
 
-          <text y="70">Launch </text>
+          <text y="70">Build </text>
           <text y="140" />
           <text y="210">+Idea</text>
 
-          <text y="70">Review</text>
+          <text y="70">Ship</text>
+          <text y="140" />
+          <text y="210">+Innovatoaars</text>
+
+          <text y="70">Scale</text>
+          <text y="140" />
+          <text y="210">+Innovatoaars</text>
+
+          <text y="70">Fund</text>
           <text y="140" />
           <text y="210">+Innovatoaars</text>
         </clipPath>
