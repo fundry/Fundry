@@ -30,7 +30,6 @@ const Title = styled.p`
     padding-top  : 10px
     padding-left  : 5px
     padding-bottom  : 10px
-
 	}
 `;
 

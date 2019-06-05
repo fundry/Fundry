@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { Grid } from "semantic-ui-react";
 import posed from "react-pose";
 import SplitText from "react-pose-text";
+import Quote from "./text/quote";
+import Flex from "styled-flex-component";
 
 // remove height property later to increase responsivness ...
 const Div = styled.div`
@@ -13,15 +15,21 @@ const Div = styled.div`
 
 const Text = styled.p`
   color : #f9db93
-  font-weight : bold
-  text-align : center
-  font-size : 2em
+  font-family :   'Source Sans Pro', sans-serif;
+  font-size : 4em
+  margin-right : 10%
+  margin-right : 10%
+  padding-left : 5px
+  padding-top : 5px
 `;
 
 export default function home() {
   return (
     <Div>
-      <Text> Build You Idea </Text>
+      <Flex justifyCenter>
+        <Quote />
+        <Text> Your Idea </Text>
+      </Flex>
     </Div>
   );
 }
