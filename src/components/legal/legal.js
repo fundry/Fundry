@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Card } from "react-bootstrap";
 import { Grid, Icon } from "semantic-ui-react";
 import Img from "react-image";
+import { Link } from "react-router-dom";
 
 const Div = styled.div`
   margin-top : 5%
@@ -31,6 +32,28 @@ const Name = styled.p`
   font-size : 1.3em
   font-weight : bold
   padding-top : 10px
+`;
+
+const buttonContain = styled.div`
+  margin-top: 4%;
+  margin-right: 5%;
+  text-align: center;
+`;
+
+const Button = styled.button`
+  background: #0e2f5a;
+  text-align: center;
+  border-radius: 4px;
+  height: 35px;
+  border: 1px solid #0e2f5a;
+  color: #fff;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+  font-size: 1em;
+  &:hover {
+    color: #0e2f5a;
+    background: #fff;
+  }
 `;
 
 export default function home() {
@@ -101,6 +124,11 @@ export default function home() {
           </Grid.Column>
         </Grid.Row>
       </Grid>
+      <Link to="./legal">
+        <buttonContain>
+          <Button> Begin Process </Button>
+        </buttonContain>
+      </Link>
     </Div>
   );
 }

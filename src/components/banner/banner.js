@@ -15,7 +15,7 @@ const Div = styled.div`
 
 const Text = styled.p`
   color : #f9db93
-  font-family :   'Source Sans Pro', sans-serif;
+  // font-family :   comic sans ms;
   font-size : 4em
   margin-right : 10%
   margin-right : 10%
@@ -26,7 +26,7 @@ const Text = styled.p`
 export default function home() {
   return (
     <Div>
-      <div style={{ paddingTop: "40%" }}>
+      <div style={{ paddingTop: "10%" }}>
         <Flex justifyCenter>
           <Quote />
           <Text> Your Idea </Text>

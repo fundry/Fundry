@@ -25,6 +25,7 @@ export default () => (
                 <List.Item as="a">Getting Started </List.Item>
                 <List.Item as="a">Guides</List.Item>
                 <List.Item as="a">Security </List.Item>
+                <List.Item as="a">Legal </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={6}>
@@ -41,6 +42,7 @@ export default () => (
               <List link inverted>
                 <List.Item as="a">Careers</List.Item>
                 <List.Item as="a">Announcement</List.Item>
+                <List.Item as="a">Releases</List.Item>
               </List>
             </Grid.Column>
           </Grid.Row>

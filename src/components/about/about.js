@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Operation from "./operation";
+import posed from "react-pose";
+import SplitText from "react-pose-text";
 
 const Div = styled.div`
   width: 100%
@@ -12,6 +14,7 @@ const Header = styled.p`
   text-align: center
   font-weight: bold
   font-size: 2em
+  padding-bottom: 3%
 `;
 
 const Contain = styled.div`
@@ -21,14 +24,33 @@ const Contain = styled.div`
   color : #022b69
 `;
 
+const Sidebar = posed.div({
+  enter: {
+    x: "0%",
+    beforeChildren: true,
+    staggerChildren: 50
+  }
+});
+
+const charPoses = {
+  exit: { opacity: 0 },
+  enter: { opacity: 1 }
+};
+
 const Text = styled.p``;
 
 export default function home() {
   return (
     <Div>
-      {" "}
       <br />
-      <Header> / " Providing a launchpad for ideas " / </Header>
+      <Sidebar initialPose="exit" pose="enter">
+        <Header>
+          <SplitText charPoses={charPoses}>
+            {" "}
+            / " Providing a launchpad for ideas " /{" "}
+          </SplitText>{" "}
+        </Header>
+      </Sidebar>
       <Contain>
         <Text>
           Fundry is a program developed to hm4bjfeb j4hgfjbhgek rh4kgegb,ekkgt
