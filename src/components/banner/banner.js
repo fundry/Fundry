@@ -26,10 +26,12 @@ const Text = styled.p`
 export default function home() {
   return (
     <Div>
-      <Flex justifyCenter>
-        <Quote />
-        <Text> Your Idea </Text>
-      </Flex>
+      <div style={{ paddingTop: "40%" }}>
+        <Flex justifyCenter>
+          <Quote />
+          <Text> Your Idea </Text>
+        </Flex>
+      </div>
     </Div>
   );
 }

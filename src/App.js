@@ -6,7 +6,7 @@ function App() {
     <div>
       <Banner /> <br />
       <About />
-      <Legal /> <br />
+      <br /> <Legal /> <br />
       <Recent /> <br />
       <Faq />
       <Footer />
