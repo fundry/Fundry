@@ -47,16 +47,20 @@ export default function home() {
         <Header>
           <SplitText charPoses={charPoses}>
             {" "}
-            / " Providing a launchpad for ideas " /{" "}
-          </SplitText>{" "}
+            " Providing a launchpad for ideas "{" "}
+          </SplitText>
         </Header>
       </Sidebar>
       <Contain>
         <Text>
           Fundry is a program developed to hm4bjfeb j4hgfjbhgek rh4kgegb,ekkgt
           jkvbwhjwgkkfjk ydkv wdkwyd gwdw nbhkeb 3f3ffe dwdwdw dwdx w222e e2rr a
-          22e 2 1e2cs 4r4ede 4t5rvdwd 3rd33 4t4efed 3r3 e23e3r e2e2 e2e2 3r3wdw
-          rw r3 33r3 3r3r35 grfed wee stewfr se tse5 e5 es sese gsg sdg sdgs gs
+          22e 2 1e2cs 4r4ede 4t5rvdwd 3rd33 4t4efed 3r3 e23e3r e2e2
+        </Text>
+        <Text>
+          Fundry is a program developed to hm4bjfeb j4hgfjbhgek rh4kgegb,ekkgt
+          jkvbwhjwgkkfjk ydkv wdkwyd gwdw nbhkeb 3f3ffe dwdwdw dwdx w222e e2rr a
+          22e 2 1e2cs 4r4ede 4t5rvdwd 3rd33 4t4efed 3r3 e23e3r e2e2
         </Text>
       </Contain>
       <br /> <br />
