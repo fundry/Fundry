@@ -45,9 +45,9 @@ export default function home() {
     <Div>
       <br />
       <Sidebar initialPose="exit" pose="enter">
-        <Header>
+        <Header className="font-italic">
           <SplitText charPoses={charPoses}>
-            " Providing a launchpad to build for the next Billion Users "
+            " Providing a launchpad to build for the next Billion Users. "
           </SplitText>
         </Header>
       </Sidebar>
