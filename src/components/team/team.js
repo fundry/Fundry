@@ -26,6 +26,7 @@ padding-right : 5%
 
 const Text = styled.p`
   text-align: center;
+  width: 60%;
 `;
 
 const Name = styled.p`
@@ -61,7 +62,6 @@ export default function home() {
   return (
     <Div>
       <Title> TEAM </Title>
-
       <Grid stackable celled="internally" columns="equal">
         <Grid.Row>
           <Grid.Column>
@@ -97,12 +97,14 @@ export default function home() {
               </Flex>
 
               <Name> Anybody A. Anybody</Name>
-              <Text>
-                {" "}
-                Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
-                jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg rgr
-                rgrgrvrdefefdf{" "}
-              </Text>
+              <Flex justifyCenter>
+                <Text>
+                  {" "}
+                  Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
+                  jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg
+                  rgr rgrgrvrdefefdf{" "}
+                </Text>
+              </Flex>
             </Card>
           </Grid.Column>
 
@@ -139,12 +141,14 @@ export default function home() {
               </Flex>
 
               <Name> Anybody A. Anybody</Name>
-              <Text>
-                {" "}
-                Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
-                jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg rgr
-                rgrgrvrdefefdf{" "}
-              </Text>
+              <Flex justifyCenter>
+                <Text>
+                  {" "}
+                  Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
+                  jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg
+                  rgr rgrgrvrdefefdf{" "}
+                </Text>
+              </Flex>
             </Card>
           </Grid.Column>
 
@@ -181,12 +185,14 @@ export default function home() {
               </Flex>
 
               <Name> Anybody A. Anybody</Name>
-              <Text>
-                {" "}
-                Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
-                jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg rgr
-                rgrgrvrdefefdf{" "}
-              </Text>
+              <Flex justifyCenter>
+                <Text>
+                  {" "}
+                  Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
+                  jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg
+                  rgr rgrgrvrdefefdf{" "}
+                </Text>
+              </Flex>
             </Card>
           </Grid.Column>
         </Grid.Row>
