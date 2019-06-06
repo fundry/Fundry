@@ -35,6 +35,11 @@ const Name = styled.p`
   font-weight : bold
   padding-top : 10px
 `;
+const Position = styled.p`
+  text-align : center
+  font-size : 0.85em
+  font-weight : bold
+`;
 
 const buttonContain = styled.div`
   margin-top: 4%;
@@ -52,7 +57,8 @@ const Button = styled.button`
   margin: 0 1em;
   padding: 0.25em 1em;
   font-size: 1em;
-  &:hover {
+  padding-bottom:  10px 
+	&:hover {
     color: #0e2f5a;
     background: #fff;
   }
@@ -96,7 +102,10 @@ export default function home() {
                 />
               </Flex>
 
-              <Name> Anybody A. Anybody</Name>
+              <Name>
+                Anybody A. Anybody <br /> <Position> Legal head </Position>
+              </Name>
+
               <Flex justifyCenter>
                 <Text>
                   {" "}
@@ -140,7 +149,11 @@ export default function home() {
                 />
               </Flex>
 
-              <Name> Anybody A. Anybody</Name>
+              <Name>
+                {" "}
+                Anybody A. Anybody <br />{" "}
+                <Position> Engineering Lead </Position>
+              </Name>
               <Flex justifyCenter>
                 <Text>
                   {" "}
@@ -184,7 +197,10 @@ export default function home() {
                 />
               </Flex>
 
-              <Name> Anybody A. Anybody</Name>
+              <Name>
+                {" "}
+                Anybody A. Anybody <br /> <Position> HR LEAD </Position>
+              </Name>
               <Flex justifyCenter>
                 <Text>
                   {" "}
@@ -198,9 +214,9 @@ export default function home() {
         </Grid.Row>
       </Grid>
       <Link to="./legal">
-        <buttonContain>
-          <Button> Begin Process </Button>
-        </buttonContain>
+        <div style={{ textAlign: "right", paddingRight: "20px" }}>
+          <Button> See More </Button>
+        </div>
       </Link>
     </Div>
   );

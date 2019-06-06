@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Operation from "./operation";
 import posed from "react-pose";
 import SplitText from "react-pose-text";
+import Uses from "./uses";
 
 const Div = styled.div`
   width: 100%
@@ -46,7 +47,7 @@ export default function home() {
       <Sidebar initialPose="exit" pose="enter">
         <Header>
           <SplitText charPoses={charPoses}>
-            " Providing a launchpad for ideas "
+            " Providing a launchpad to build for the next Billion Users "
           </SplitText>
         </Header>
       </Sidebar>
@@ -62,7 +63,9 @@ export default function home() {
           22e 2 1e2cs 4r4ede 4t5rvdwd 3rd33 4t4efed 3r3 e23e3r e2e2
         </Text>
       </Contain>
-      <br /> <br />
+      <br />
+      <Uses />
+      <br />
       <div>
         <Operation />
       </div>

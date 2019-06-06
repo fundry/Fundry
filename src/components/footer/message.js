@@ -91,13 +91,12 @@ export default class reset extends Component {
                   name="name"
                   style={{
                     height: "45px",
-                    marginRight: "20px",
                     paddingLeft: "10px",
                     marginTop: "4%",
                     marginBottom: "4%",
                     borderRadius: "3px",
                     borderWidth: "0.5px",
-                    width: "400px",
+                    width: "350px",
                     borderColor: "#1B1B1B"
                   }}
                 />
@@ -112,7 +111,7 @@ export default class reset extends Component {
                     paddingLeft: "10px",
                     borderRadius: "3px",
                     borderWidth: "0.5px",
-                    width: "400px",
+                    width: "350px",
                     borderColor: "#1B1B1B "
                   }}
                 />
@@ -128,7 +127,7 @@ export default class reset extends Component {
                     paddingTop: "15px",
                     borderRadius: "3px",
                     borderWidth: "0.5px",
-                    width: "400px",
+                    width: "350px",
                     borderColor: "#1B1B1B",
                     marginRight: "20px"
                   }}

@@ -12,6 +12,7 @@ font-weight : bold
 font-size : 1.3em
 text-align : right
 padding-right : 5%
+padding-top : 1%
 `;
 
 const Text = styled.h4`
@@ -22,7 +23,7 @@ const Text = styled.h4`
 export default function home() {
   return (
     <Div>
-      <Title> PROJECTS</Title>
+      <Title> RELEASES </Title>
       <Text> No Recent Projects Yet </Text>
     </Div>
   );

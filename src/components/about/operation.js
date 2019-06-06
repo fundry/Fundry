@@ -13,12 +13,6 @@ const Div = styled.div`
   padding-bottom: 5%
 `;
 
-const buttonContain = styled.div`
-  margin-top: 4%;
-  margin-right: 5%;
-  text-align: right;
-`;
-
 const Button = styled.button`
   background: #0e2f5a;
   text-align: right;
@@ -75,7 +69,7 @@ export default function home() {
       </Contain>
 
       <Link to="./application">
-        <div style={{ float: "right" }}>
+        <div style={{ textAlign: "right", paddingBottom: "5px" }}>
           <Button> Begin Process </Button>
         </div>
       </Link>
