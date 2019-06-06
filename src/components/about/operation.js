@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Customer, Form, Dev } from "./svg/index";
 import { Grid } from "semantic-ui-react";
+import Flex from "styled-flex-component";
 
 const Div = styled.div`
   width: 95%
@@ -39,7 +40,9 @@ const Header = styled.p`
 
 const Contain = styled.div`
   margin-left: 3%
+ text-align: center
   margin-right: 3%
+ width: 80%
 `;
 
 const Text = styled.p``;
@@ -47,27 +50,29 @@ const Text = styled.p``;
 export default function home() {
   return (
     <Div>
-      <Header> GET STARTED </Header>
-
-      <Contain>
-        <Grid stackable columns="equal">
-          <Grid.Row>
-            <Grid.Column>
-              <img src={Form} />
-              <Text> Create Application </Text>
-            </Grid.Column>
-            <Grid.Column>
-              <img src={Customer} />
-              <Text> Interact </Text>
-            </Grid.Column>{" "}
-            <Grid.Column>
-              <img src={Dev} />
-              <Text> Begin Development </Text>
-            </Grid.Column>{" "}
-          </Grid.Row>
-        </Grid>
-      </Contain>
-
+      <Header> APPLICATION </Header>
+      <Flex justifyCenter>
+        <Contain>
+          <Grid stackable columns="equal">
+            <Grid.Row>
+              <Grid.Column>
+                <Flex column>
+                  <img src={Form} />
+                  <Text> Create Application </Text>
+                </Flex>
+              </Grid.Column>
+              <Grid.Column>
+                <img src={Customer} />
+                <Text> Interact </Text>
+              </Grid.Column>{" "}
+              <Grid.Column>
+                <img src={Dev} />
+                <Text> Begin Development </Text>
+              </Grid.Column>{" "}
+            </Grid.Row>
+          </Grid>
+        </Contain>
+      </Flex>
       <Link to="./application">
         <div style={{ textAlign: "right", paddingBottom: "5px" }}>
           <Button> Begin Process </Button>

@@ -26,6 +26,7 @@ export default function home() {
   return (
     <Flex justifyCenter>
       <Card
+        className="shadow p-3 mb-5 bg-white rounded"
         style={{
           paddingLeft: "2.5%",
           paddingRight: "2.5%",
@@ -35,7 +36,7 @@ export default function home() {
         }}
       >
         <Grid stackable columns="equal">
-          <Grid.Row columns="2">
+          <Grid.Row columns="3">
             <Grid.Column>
               <Contain>
                 <Icon name="facebook" size="big" />
@@ -59,12 +60,6 @@ export default function home() {
             </Grid.Column>{" "}
             <br /> <br /> <br />
             <br /> <br /> <br />
-            <Grid.Column>
-              <Contain>
-                <Icon name="facebook" size="big" />
-                <Text> Review your Idea </Text>
-              </Contain>
-            </Grid.Column>
             <Grid.Column>
               <Contain>
                 <Icon name="facebook" size="big" />
