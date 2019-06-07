@@ -23,14 +23,41 @@ const Text = styled.p`
   padding-top : 5px
 `;
 
+const Header = styled.p`
+  color : #fff
+  text-align: center
+  font-weight: bold
+  font-size: 2em
+  padding-bottom: 3%
+  width : 50%
+`;
+
+const Sidebar = posed.div({
+  enter: {
+    x: "0%",
+    beforeChildren: true,
+    staggerChildren: 50
+  }
+});
+
+const charPoses = {
+  exit: { opacity: 0 },
+  enter: { opacity: 1 }
+};
+
 export default function home() {
   return (
     <Div>
-      <div style={{ paddingTop: "10%" }}>
-        <Flex justifyCenter>
-          <Quote />
-          <Text> Your Idea </Text>
-        </Flex>
+      <div style={{ paddingTop: "10%", textAlign: "right" }}>
+        <Quote />
+
+        <Sidebar initialPose="exit" pose="enter">
+          <Header>
+            <SplitText charPoses={charPoses}>
+              Providing a launchpad to build for the next Billion Users.
+            </SplitText>
+          </Header>
+        </Sidebar>
       </div>
     </Div>
   );

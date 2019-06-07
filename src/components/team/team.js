@@ -5,6 +5,7 @@ import { Grid, Icon } from "semantic-ui-react";
 import Img from "react-image";
 import { Link } from "react-router-dom";
 import Flex from "styled-flex-component";
+import { media } from "../media_style";
 
 const Div = styled.div`
   margin-top : 3%
@@ -56,11 +57,30 @@ const Button = styled.button`
   margin: 0 1em;
   padding: 0.25em 1em;
   font-size: 1em;
+  styledCard
   padding-bottom:  10px 
 	&:hover {
     color: #0e2f5a;
     background: #fff;
   }
+`;
+
+const styledCard = styled(Card)`
+border-radius: 10px,
+padding-bottom: 5px,
+padding-top: 5px,
+max-width: 77%
+${media.phone`
+border-radius: 10px,
+padding-bottom: 5px,
+padding-top: 5px,
+max-width: 77%
+`}
+${media.tablet`
+border-radius: 10px,
+padding-bottom: 5px,
+padding-top: 5px,
+`}
 `;
 
 export default function home() {
@@ -73,6 +93,7 @@ export default function home() {
           <Grid.Column>
             <Flex justifyCenter>
               <Img
+                alt="Team Member"
                 style={{
                   width: "7rem",
                   borderRadius: "10rem",
@@ -83,6 +104,7 @@ export default function home() {
                 }
                 loader={
                   <img
+                    alt="Team Member"
                     style={{
                       width: "15rem",
                       borderRadius: "10rem",
@@ -93,14 +115,7 @@ export default function home() {
                 }
                 unloader={<h1> NOT LOADED </h1>}
               />
-              <Card
-                className="shadow-sm p-3 mb-5 bg-white rounded"
-                style={{
-                  borderRadius: "10px",
-                  paddingBottom: "5px",
-                  maxWidth: "77%"
-                }}
-              >
+              <Card className="shadow-sm p-3 mb-5 bg-white rounded">
                 <Name>
                   Anybody A. Anybody <br />{" "}
                   <Position className="font-italic"> Legal head </Position>
@@ -125,6 +140,7 @@ export default function home() {
                 }
                 loader={
                   <img
+                    alt="Team Member"
                     style={{
                       width: "15rem",
                       borderRadius: "10rem",
@@ -135,15 +151,7 @@ export default function home() {
                 }
                 unloader={<h1> NOT LOADED </h1>}
               />
-              <Card
-                className="shadow-sm p-3 mb-5 bg-white rounded"
-                style={{
-                  borderRadius: "10px",
-                  paddingBottom: "5px",
-                  paddingTop: "5px",
-                  maxWidth: "77%"
-                }}
-              >
+              <styledCard className="shadow-sm p-3 mb-5 bg-white rounded">
                 <Name>
                   Anybody A. Anybody <br />{" "}
                   <Position className="font-italic"> Legal head </Position>
@@ -152,12 +160,13 @@ export default function home() {
                 <Flex justifyCenter>
                   <Text> Jackson & sons consult</Text>
                 </Flex>
-              </Card>
+              </styledCard>
             </Flex>
           </Grid.Column>
           <Grid.Column>
             <Flex justifyCenter>
               <Img
+                alt="Team Member"
                 style={{
                   width: "7rem",
                   borderRadius: "10rem",
@@ -168,6 +177,7 @@ export default function home() {
                 }
                 loader={
                   <img
+                    alt="Team Member"
                     style={{
                       width: "15rem",
                       borderRadius: "10rem",
@@ -178,15 +188,7 @@ export default function home() {
                 }
                 unloader={<h1> NOT LOADED </h1>}
               />
-              <Card
-                className="shadow-sm p-3 mb-5 bg-white rounded"
-                style={{
-                  borderRadius: "10px",
-                  paddingBottom: "5px",
-                  paddingTop: "5px",
-                  maxWidth: "77%"
-                }}
-              >
+              <styledCard className="shadow-sm p-3 mb-5 bg-white rounded">
                 <Name>
                   Anybody A. Anybody <br />{" "}
                   <Position className="font-italic"> Legal head </Position>
@@ -195,12 +197,13 @@ export default function home() {
                 <Flex justifyCenter>
                   <Text>Jackson & sons consult </Text>
                 </Flex>
-              </Card>
+              </styledCard>
             </Flex>
           </Grid.Column>{" "}
           <Grid.Column>
             <Flex justifyCenter>
               <Img
+                alt="Team Member"
                 style={{
                   width: "7rem",
                   borderRadius: "10rem",
@@ -211,6 +214,7 @@ export default function home() {
                 }
                 loader={
                   <img
+                    alt="Team Member"
                     style={{
                       width: "15rem",
                       borderRadius: "10rem",
@@ -221,15 +225,7 @@ export default function home() {
                 }
                 unloader={<h1> NOT LOADED </h1>}
               />
-              <Card
-                className="shadow-sm p-3 mb-5 bg-white rounded"
-                style={{
-                  borderRadius: "10px",
-                  paddingBottom: "5px",
-                  paddingTop: "5px",
-                  maxWidth: "77%"
-                }}
-              >
+              <styledCard className="shadow-sm p-3 mb-5 bg-white rounded">
                 <Name>
                   Anybody A. Anybody <br />{" "}
                   <Position className="font-italic"> Legal head </Position>
@@ -238,7 +234,7 @@ export default function home() {
                 <Flex justifyCenter>
                   <Text>Jackson & sons consult </Text>
                 </Flex>
-              </Card>
+              </styledCard>
             </Flex>
           </Grid.Column>
         </Grid.Row>

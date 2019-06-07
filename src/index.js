@@ -7,7 +7,6 @@ import { Router, Route } from "react-router";
 import { createBrowserHistory } from "history";
 
 const history = createBrowserHistory();
-
 ReactDOM.render(
   <Router history={history}>
     <Route exact path="/" component={App} />
