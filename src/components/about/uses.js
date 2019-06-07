@@ -28,11 +28,12 @@ export default function home() {
       <Card
         className="shadow p-3 mb-5 bg-white rounded"
         style={{
-          paddingLeft: "2.5%",
-          paddingRight: "2.5%",
-          paddingTop: "2.5%",
-          paddingBottom: "2.5%",
-          width: "65%"
+          paddingLeft: "5%",
+          paddingRight: "5%",
+          paddingTop: "3%",
+          paddingBottom: "23%",
+          width: "65%",
+          color: "#0e2f5a"
         }}
       >
         <Grid stackable columns="equal">
@@ -55,7 +56,7 @@ export default function home() {
             <Grid.Column>
               <Contain>
                 <Icon name="facebook" size="big" />
-                <Text> Review your Idea </Text>
+                <Text> Build your Legal Structure </Text>
               </Contain>
             </Grid.Column>{" "}
             <br /> <br /> <br />
@@ -63,13 +64,19 @@ export default function home() {
             <Grid.Column>
               <Contain>
                 <Icon name="facebook" size="big" />
-                <Text> Review your Idea </Text>
+                <Text> Develop your Idea </Text>
+              </Contain>
+            </Grid.Column>{" "}
+            <Grid.Column>
+              <Contain>
+                <Icon name="facebook" size="big" />
+                <Text> Develop your Idea </Text>
               </Contain>
             </Grid.Column>
             <Grid.Column>
               <Contain>
                 <Icon name="facebook" size="big" />
-                <Text> Review your Idea </Text>
+                <Text> Raise funds for your service </Text>
               </Contain>
             </Grid.Column>
           </Grid.Row>

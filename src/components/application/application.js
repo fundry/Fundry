@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Footer from "../footer/footer";
 
 const Div = styled.div`
   width: 100%
@@ -19,11 +20,31 @@ const Text = styled.h4`
   padding-top : 5% 
 `;
 
+const Button = styled.button`
+  background: #0e2f5a;
+  text-align: right;
+  border-radius: 4px;
+  height: 35px;
+  border: 1px solid #0e2f5a;
+  color: #fff;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+  font-size: 1em;
+  &:hover {
+    color: #0e2f5a;
+    background: #fff;
+  }
+`;
+
 export default function home() {
   return (
     <Div>
-      <Title> PROJECTS</Title>
-      <Text> No Recent Projects Yet </Text>
+      <Title> PROJECTS </Title>
+      <Text> APPLICATION PAGE</Text>
+
+      <Button> Create Application </Button>
+      <Button> Download Sample Form </Button>
+      <Footer showFeedback={false} />
     </Div>
   );
 }

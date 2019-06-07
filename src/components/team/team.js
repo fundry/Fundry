@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Flex from "styled-flex-component";
 
 const Div = styled.div`
-  margin-top : 5%
+  margin-top : 3%
   width: 100%
   background: #f2f5ff
   padding-top : 3%
@@ -26,15 +26,14 @@ padding-right : 5%
 
 const Text = styled.p`
   text-align: center;
-  width: 60%;
 `;
 
 const Name = styled.p`
   text-align : center
-  font-size : 1.3em
+  font-size : 1.1em
   font-weight : bold
-  padding-top : 10px
 `;
+
 const Position = styled.p`
   text-align : center
   font-size : 0.85em
@@ -70,158 +69,174 @@ export default function home() {
       <Title> TEAM </Title>
 
       <Grid stackable celled="internally" columns="equal">
-        <Grid.Row>
+        <Grid.Row columns="2">
           <Grid.Column>
             <Flex justifyCenter>
+              <Img
+                style={{
+                  width: "7rem",
+                  borderRadius: "10rem",
+                  height: "12vh"
+                }}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    style={{
+                      width: "15rem",
+                      borderRadius: "10rem",
+                      height: "25vh"
+                    }}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
               <Card
                 className="shadow-sm p-3 mb-5 bg-white rounded"
                 style={{
                   borderRadius: "10px",
-                  paddingBottom: "20px",
-                  paddingTop: "20px",
+                  paddingBottom: "5px",
                   maxWidth: "77%"
                 }}
               >
-                <Flex justifyCenter>
-                  <Img
-                    style={{
-                      width: "11rem",
-                      borderRadius: "10rem",
-                      height: "17vh"
-                    }}
-                    src={
-                      "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-                    }
-                    loader={
-                      <img
-                        style={{
-                          width: "15rem",
-                          borderRadius: "10rem",
-                          height: "25vh"
-                        }}
-                        src={require("../../images/developer.png")}
-                      />
-                    }
-                    unloader={<h1> NOT LOADED </h1>}
-                  />
-                </Flex>
-
                 <Name>
                   Anybody A. Anybody <br />{" "}
                   <Position className="font-italic"> Legal head </Position>
                 </Name>
 
                 <Flex justifyCenter>
-                  <Text>
-                    {" "}
-                    Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
-                    jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg
-                    rgr rgrgrvrdefefdf{" "}
-                  </Text>
+                  <Text> Jackson & sons consult </Text>
                 </Flex>
               </Card>
             </Flex>
           </Grid.Column>
-
           <Grid.Column>
             <Flex justifyCenter>
+              <Img
+                style={{
+                  width: "7rem",
+                  borderRadius: "10rem",
+                  height: "12vh"
+                }}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    style={{
+                      width: "15rem",
+                      borderRadius: "10rem",
+                      height: "25vh"
+                    }}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
               <Card
                 className="shadow-sm p-3 mb-5 bg-white rounded"
                 style={{
                   borderRadius: "10px",
-                  paddingBottom: "20px",
-                  paddingTop: "20px",
+                  paddingBottom: "5px",
+                  paddingTop: "5px",
                   maxWidth: "77%"
                 }}
               >
-                <Flex justifyCenter>
-                  <Img
-                    style={{
-                      width: "11rem",
-                      borderRadius: "10rem",
-                      height: "17vh"
-                    }}
-                    src={
-                      "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-                    }
-                    loader={
-                      <img
-                        style={{
-                          width: "15rem",
-                          borderRadius: "10rem",
-                          height: "25vh"
-                        }}
-                        src={require("../../images/developer.png")}
-                      />
-                    }
-                    unloader={<h1> NOT LOADED </h1>}
-                  />
-                </Flex>
-
                 <Name>
                   Anybody A. Anybody <br />{" "}
                   <Position className="font-italic"> Legal head </Position>
                 </Name>
 
                 <Flex justifyCenter>
-                  <Text>
-                    {" "}
-                    Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
-                    jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg
-                    rgr rgrgrvrdefefdf{" "}
-                  </Text>
+                  <Text> Jackson & sons consult</Text>
                 </Flex>
               </Card>
             </Flex>
           </Grid.Column>
-
           <Grid.Column>
             <Flex justifyCenter>
+              <Img
+                style={{
+                  width: "7rem",
+                  borderRadius: "10rem",
+                  height: "12vh"
+                }}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    style={{
+                      width: "15rem",
+                      borderRadius: "10rem",
+                      height: "25vh"
+                    }}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
               <Card
                 className="shadow-sm p-3 mb-5 bg-white rounded"
                 style={{
                   borderRadius: "10px",
-                  paddingBottom: "20px",
-                  paddingTop: "20px",
+                  paddingBottom: "5px",
+                  paddingTop: "5px",
                   maxWidth: "77%"
                 }}
               >
-                <Flex justifyCenter>
-                  <Img
-                    style={{
-                      width: "11rem",
-                      borderRadius: "10rem",
-                      height: "17vh"
-                    }}
-                    src={
-                      "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-                    }
-                    loader={
-                      <img
-                        style={{
-                          width: "15rem",
-                          borderRadius: "10rem",
-                          height: "25vh"
-                        }}
-                        src={require("../../images/developer.png")}
-                      />
-                    }
-                    unloader={<h1> NOT LOADED </h1>}
-                  />
-                </Flex>
-
                 <Name>
                   Anybody A. Anybody <br />{" "}
                   <Position className="font-italic"> Legal head </Position>
                 </Name>
 
                 <Flex justifyCenter>
-                  <Text>
-                    {" "}
-                    Consultant at a j.hnnrjrefhey mhgfefdbc, fbrefebse kjr,rbfmb
-                    jshkef,hewv rrukgrbkrjgerfef lhjrugrghegffsvfgf fgrtgr gfgrg
-                    rgr rgrgrvrdefefdf{" "}
-                  </Text>
+                  <Text>Jackson & sons consult </Text>
+                </Flex>
+              </Card>
+            </Flex>
+          </Grid.Column>{" "}
+          <Grid.Column>
+            <Flex justifyCenter>
+              <Img
+                style={{
+                  width: "7rem",
+                  borderRadius: "10rem",
+                  height: "12vh"
+                }}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    style={{
+                      width: "15rem",
+                      borderRadius: "10rem",
+                      height: "25vh"
+                    }}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+              <Card
+                className="shadow-sm p-3 mb-5 bg-white rounded"
+                style={{
+                  borderRadius: "10px",
+                  paddingBottom: "5px",
+                  paddingTop: "5px",
+                  maxWidth: "77%"
+                }}
+              >
+                <Name>
+                  Anybody A. Anybody <br />{" "}
+                  <Position className="font-italic"> Legal head </Position>
+                </Name>
+
+                <Flex justifyCenter>
+                  <Text>Jackson & sons consult </Text>
                 </Flex>
               </Card>
             </Flex>
@@ -231,7 +246,7 @@ export default function home() {
 
       <Link to="./legal">
         <div style={{ textAlign: "right", paddingRight: "20px" }}>
-          <Button> See More </Button>
+          <Button> Full Team </Button>
         </div>
       </Link>
     </Div>
