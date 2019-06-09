@@ -123,6 +123,7 @@ export default function home() {
             <Icon name="facebook" size="big" color="blue" />
             <Icon name="twitter" size="big" color="blue" />
             <Icon name="instagram" size="big" color="red" />
+            <Icon name="linkedin" size="big" color="blue" />
           </Flex>
         </Card>
 
@@ -152,13 +153,14 @@ export default function home() {
           </Flex>
 
           <Name>
-            Anybody A. Anybody <br /> <Position> Legal head </Position>
+            Anybody A. Anybody <br /> <Position> Engineering Lead </Position>
           </Name>
 
           <Flex justifyCenter>
             <Icon name="facebook" size="big" color="blue" />
             <Icon name="twitter" size="big" color="blue" />
             <Icon name="instagram" size="big" color="red" />
+            <Icon name="github" size="big" color="black" />
           </Flex>
         </Card>
 
@@ -235,7 +237,7 @@ export default function home() {
         </Card>
       </Gallery>
 
-      <Link to="./legal">
+      <Link to="./team">
         <div style={{ textAlign: "right", paddingRight: "20px" }}>
           <Button> Full Team </Button>
         </div>

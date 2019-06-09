@@ -25,7 +25,7 @@ const Text = styled.p`
 `;
 
 const Head = styled.p`
-  color : #000
+  color : #0e2f5a
   text-align: center
   font-weight: bold
   font-size: 1.5em

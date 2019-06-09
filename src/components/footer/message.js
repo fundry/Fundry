@@ -13,7 +13,7 @@ export default class reset extends Component {
   render() {
     const Input = styled.input`
       width : 50%
-      margin-left : 10%
+      margin-left : 7%
       height  : 70px
       border-radius : 5px  
     `;
@@ -107,7 +107,6 @@ export default class reset extends Component {
                   name="email"
                   style={{
                     height: "45px",
-                    marginRight: "20px",
                     paddingLeft: "10px",
                     borderRadius: "3px",
                     borderWidth: "0.5px",

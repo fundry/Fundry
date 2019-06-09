@@ -45,6 +45,21 @@ const Header = () => {
     }
   `;
 
+  const Login = styled.button`
+    background: #fff;
+    text-align: right;
+    border-radius: 4px;
+    height: 30px;
+    border: 2px solid #0e2f5a;
+    color: #0e2f5a;
+    margin: 0 1em;
+    padding: 0.25em 1em;
+    font-size: 1em;
+    &:hover {
+      color: #fff;
+      background: #0e2f5a;
+    }
+  `;
   // react hooks && event listeners
   const NameDiv = styled.div`
     margin-left: 4%;
@@ -86,6 +101,7 @@ const Header = () => {
           <Flex>
             <A href="/">EvoHub</A>
             <Button> Apply </Button>
+            <Login> Login </Login>
           </Flex>
         </Flex>
       </nav>

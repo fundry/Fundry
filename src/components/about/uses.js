@@ -37,7 +37,7 @@ export default function home() {
           <Grid.Row columns="3">
             <Grid.Column>
               <Contain>
-                <Rocket style={{ maxHeight: "15vh", Bottom: 0 }} />
+                <Rocket style={{ maxHeight: "20vh", Bottom: 0 }} />
                 <Flex column>
                   <Text>
                     <strong> Review </strong>
@@ -52,7 +52,7 @@ export default function home() {
             </Grid.Column>
             <Grid.Column>
               <Contain>
-                <Rocket style={{ maxHeight: "15vh", Bottom: 0 }} />
+                <Rocket style={{ maxHeight: "20vh", Bottom: 0 }} />
                 <Flex column>
                   <Text>
                     <strong> Refactor </strong>

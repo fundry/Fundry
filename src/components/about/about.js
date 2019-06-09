@@ -30,7 +30,7 @@ export default function home() {
           <Grid.Row>
             <Grid.Column>
               <Flex justifyCenter>
-                <Bulb style={{ height: "20vh", width: "50%" }} />
+                <Bulb style={{ height: "25vh", width: "50%" }} />
               </Flex>
             </Grid.Column>
 

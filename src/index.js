@@ -1,7 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { Application, legalPage, Form } from "./components/index";
+import {
+  Application,
+  Team,
+  Reset,
+  Login,
+  Signup,
+  Form
+} from "./components/index";
 import * as serviceWorker from "./serviceWorker";
 import { Router, Route } from "react-router";
 import { createBrowserHistory } from "history";
@@ -11,8 +18,11 @@ ReactDOM.render(
   <Router history={history}>
     <Route exact path="/" component={App} />
     <Route path="/apply" component={Application} />
-    <Route path="/legal" component={legalPage} />
+    <Route path="/team" component={Team} />
     <Route path="/form" component={Form} />
+    <Route path="/login" component={Login} />
+    <Route path="/signup" component={Signup} />
+    <Route path="/reset" component={Reset} />
   </Router>,
   document.getElementById("root")
 );

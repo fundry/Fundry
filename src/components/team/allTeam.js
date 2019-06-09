@@ -22,8 +22,8 @@ const Text = styled.h4`
 export default function home() {
   return (
     <Div>
-      <Title> legal</Title>
-      <Text> legal </Text>
+      <Title> TEAM </Title>
+      <Text> TEAM PAGE ... NOT DONE </Text>
     </Div>
   );
 }
