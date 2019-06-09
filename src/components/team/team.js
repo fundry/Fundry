@@ -25,13 +25,9 @@ text-align : right
 padding-right : 5%
 `;
 
-const Text = styled.p`
-  text-align: center;
-`;
-
 const Name = styled.p`
   text-align : center
-  font-size : 1.1em
+  font-size : 1em
   font-weight : bold
 `;
 
@@ -65,180 +61,207 @@ const Button = styled.button`
   }
 `;
 
-const styledCard = styled(Card)`
-border-radius: 10px,
-padding-bottom: 5px,
-padding-top: 5px,
-max-width: 77%
-${media.phone`
-border-radius: 10px,
-padding-bottom: 5px,
-padding-top: 5px,
-max-width: 77%
-`}
-${media.tablet`
-border-radius: 10px,
-padding-bottom: 5px,
-padding-top: 5px,
-`}
-`;
+const autoGrid = (minColumnWidth = 150, gridGap = 0) => ({
+  display: "grid",
+  gridTemplateColumns: `repeat(auto-fill, minmax(${minColumnWidth}px, 1fr))`,
+  gridGap
+});
+
+const Gallery = styled.div({
+  ...autoGrid(230, 10),
+  padding: "20px"
+});
+
+const Image = styled.img({
+  width: "100%",
+  borderRadius: 10,
+  boxShadow: "1px 1px 5px rgba(0,0,0,0.3)"
+});
 
 export default function home() {
+  const randomImages = Array.from({ length: 100 });
+
   return (
     <Div>
       <Title> TEAM </Title>
 
-      <Grid stackable celled="internally" columns="equal">
-        <Grid.Row columns="2">
-          <Grid.Column>
-            <Flex justifyCenter>
-              <Img
-                alt="Team Member"
-                style={{
-                  width: "7rem",
-                  borderRadius: "10rem",
-                  height: "12vh"
-                }}
-                src={
-                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-                }
-                loader={
-                  <img
-                    alt="Team Member"
-                    style={{
-                      width: "15rem",
-                      borderRadius: "10rem",
-                      height: "25vh"
-                    }}
-                    src={require("../../images/developer.png")}
-                  />
-                }
-                unloader={<h1> NOT LOADED </h1>}
-              />
-              <Card className="shadow-sm p-3 mb-5 bg-white rounded">
-                <Name>
-                  Anybody A. Anybody <br />{" "}
-                  <Position className="font-italic"> Legal head </Position>
-                </Name>
+      <Gallery>
+        <Card
+          style={{
+            borderRadius: "10px",
+            paddingBottom: "20px",
+            paddingTop: "20px"
+          }}
+        >
+          <Flex justifyCenter>
+            <Img
+              rounded
+              style={{
+                width: "15rem",
+                borderRadius: "10rem",
+                height: "35vh"
+              }}
+              src={
+                "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+              }
+              loader={
+                <img
+                  alt=" member "
+                  style={{
+                    width: "15rem",
+                    borderRadius: "10rem",
+                    height: "25vh"
+                  }}
+                  src={require("../../images/developer.png")}
+                />
+              }
+              unloader={<h1> NOT LOADED </h1>}
+            />
+          </Flex>
 
-                <Flex justifyCenter>
-                  <Text> Jackson & sons consult </Text>
-                </Flex>
-              </Card>
-            </Flex>
-          </Grid.Column>
-          <Grid.Column>
-            <Flex justifyCenter>
-              <Img
-                style={{
-                  width: "7rem",
-                  borderRadius: "10rem",
-                  height: "12vh"
-                }}
-                src={
-                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-                }
-                loader={
-                  <img
-                    alt="Team Member"
-                    style={{
-                      width: "15rem",
-                      borderRadius: "10rem",
-                      height: "25vh"
-                    }}
-                    src={require("../../images/developer.png")}
-                  />
-                }
-                unloader={<h1> NOT LOADED </h1>}
-              />
-              <styledCard className="shadow-sm p-3 mb-5 bg-white rounded">
-                <Name>
-                  Anybody A. Anybody <br />{" "}
-                  <Position className="font-italic"> Legal head </Position>
-                </Name>
+          <Name>
+            Anybody A. Anybody <br /> <Position> Legal head </Position>
+          </Name>
 
-                <Flex justifyCenter>
-                  <Text> Jackson & sons consult</Text>
-                </Flex>
-              </styledCard>
-            </Flex>
-          </Grid.Column>
-          <Grid.Column>
-            <Flex justifyCenter>
-              <Img
-                alt="Team Member"
-                style={{
-                  width: "7rem",
-                  borderRadius: "10rem",
-                  height: "12vh"
-                }}
-                src={
-                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-                }
-                loader={
-                  <img
-                    alt="Team Member"
-                    style={{
-                      width: "15rem",
-                      borderRadius: "10rem",
-                      height: "25vh"
-                    }}
-                    src={require("../../images/developer.png")}
-                  />
-                }
-                unloader={<h1> NOT LOADED </h1>}
-              />
-              <styledCard className="shadow-sm p-3 mb-5 bg-white rounded">
-                <Name>
-                  Anybody A. Anybody <br />{" "}
-                  <Position className="font-italic"> Legal head </Position>
-                </Name>
+          <Flex justifyCenter>
+            <Icon name="facebook" size="big" color="blue" />
+            <Icon name="twitter" size="big" color="blue" />
+            <Icon name="instagram" size="big" color="red" />
+          </Flex>
+        </Card>
 
-                <Flex justifyCenter>
-                  <Text>Jackson & sons consult </Text>
-                </Flex>
-              </styledCard>
-            </Flex>
-          </Grid.Column>{" "}
-          <Grid.Column>
-            <Flex justifyCenter>
-              <Img
-                alt="Team Member"
-                style={{
-                  width: "7rem",
-                  borderRadius: "10rem",
-                  height: "12vh"
-                }}
-                src={
-                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-                }
-                loader={
-                  <img
-                    alt="Team Member"
-                    style={{
-                      width: "15rem",
-                      borderRadius: "10rem",
-                      height: "25vh"
-                    }}
-                    src={require("../../images/developer.png")}
-                  />
-                }
-                unloader={<h1> NOT LOADED </h1>}
-              />
-              <styledCard className="shadow-sm p-3 mb-5 bg-white rounded">
-                <Name>
-                  Anybody A. Anybody <br />{" "}
-                  <Position className="font-italic"> Legal head </Position>
-                </Name>
+        <Card
+          style={{
+            borderRadius: "10px",
+            paddingBottom: "20px",
+            paddingTop: "20px"
+          }}
+        >
+          <Flex justifyCenter>
+            <Img
+              rounded
+              style={{
+                width: "15rem",
+                borderRadius: "10rem",
+                height: "35vh"
+              }}
+              src={
+                "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+              }
+              loader={
+                <img
+                  alt=" member "
+                  style={{
+                    width: "15rem",
+                    borderRadius: "10rem",
+                    height: "25vh"
+                  }}
+                  src={require("../../images/developer.png")}
+                />
+              }
+              unloader={<h1> NOT LOADED </h1>}
+            />
+          </Flex>
 
-                <Flex justifyCenter>
-                  <Text>Jackson & sons consult </Text>
-                </Flex>
-              </styledCard>
-            </Flex>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+          <Name>
+            Anybody A. Anybody <br /> <Position> Legal head </Position>
+          </Name>
+
+          <Flex justifyCenter>
+            <Icon name="facebook" size="big" color="blue" />
+            <Icon name="twitter" size="big" color="blue" />
+            <Icon name="instagram" size="big" color="red" />
+          </Flex>
+        </Card>
+
+        <Card
+          style={{
+            borderRadius: "10px",
+            paddingBottom: "20px",
+            paddingTop: "20px"
+          }}
+        >
+          <Flex justifyCenter>
+            <Img
+              rounded
+              style={{
+                width: "15rem",
+                borderRadius: "10rem",
+                height: "35vh"
+              }}
+              src={
+                "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+              }
+              loader={
+                <img
+                  alt=" member "
+                  style={{
+                    width: "15rem",
+                    borderRadius: "10rem",
+                    height: "25vh"
+                  }}
+                  src={require("../../images/developer.png")}
+                />
+              }
+              unloader={<h1> NOT LOADED </h1>}
+            />
+          </Flex>
+
+          <Name>
+            Anybody A. Anybody <br /> <Position> Legal head </Position>
+          </Name>
+
+          <Flex justifyCenter>
+            <Icon name="facebook" size="big" color="blue" />
+            <Icon name="twitter" size="big" color="blue" />
+            <Icon name="instagram" size="big" color="red" />
+          </Flex>
+        </Card>
+
+        <Card
+          style={{
+            borderRadius: "10px",
+            paddingBottom: "20px",
+            paddingTop: "20px"
+          }}
+        >
+          <Flex justifyCenter>
+            <Img
+              rounded
+              style={{
+                width: "15rem",
+                borderRadius: "10rem",
+                height: "35vh"
+              }}
+              src={
+                "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+              }
+              loader={
+                <img
+                  alt=" member "
+                  style={{
+                    width: "15rem",
+                    borderRadius: "10rem",
+                    height: "25vh"
+                  }}
+                  src={require("../../images/developer.png")}
+                />
+              }
+              unloader={<h1> NOT LOADED </h1>}
+            />
+          </Flex>
+
+          <Name>
+            Anybody A. Anybody <br /> <Position> Legal head </Position>
+          </Name>
+
+          <Flex justifyCenter>
+            <Icon name="facebook" size="big" color="blue" />
+            <Icon name="twitter" size="big" color="blue" />
+            <Icon name="instagram" size="big" color="red" />
+          </Flex>
+        </Card>
+      </Gallery>
 
       <Link to="./legal">
         <div style={{ textAlign: "right", paddingRight: "20px" }}>

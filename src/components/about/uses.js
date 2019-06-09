@@ -29,7 +29,7 @@ export default function home() {
           paddingRight: "5%",
           paddingTop: "3%",
           paddingBottom: "5%",
-          width: "80%",
+          width: "90%",
           color: "#0e2f5a"
         }}
       >
@@ -58,28 +58,6 @@ export default function home() {
               </Contain>
             </Grid.Column>{" "}
             <br /> <br /> <br />
-            <br /> <br /> <br />
-            <Grid.Column>
-              <Contain>
-                <Develop style={{ maxHeight: "15vh", Bottom: 0 }} />
-                <Text>
-                  {" "}
-                  <strong> Build </strong>
-                </Text>
-              </Contain>
-            </Grid.Column>
-            <Grid.Column>
-              <Contain>
-                <Rocket style={{ maxHeight: "15vh", Bottom: 0 }} />
-                <Text> Develop </Text>
-              </Contain>
-            </Grid.Column>
-            <Grid.Column>
-              <Contain>
-                <Rocket style={{ maxHeight: "15vh", Bottom: 0 }} />
-                <Text> Funds</Text>
-              </Contain>
-            </Grid.Column>
           </Grid.Row>
         </Grid>
       </Card>

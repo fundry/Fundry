@@ -24,7 +24,6 @@ export default function home() {
   return (
     <Div>
       <Title> RELEASES </Title>
-      <Text> No Recent Projects Yet </Text>
     </Div>
   );
 }

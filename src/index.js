@@ -10,7 +10,7 @@ const history = createBrowserHistory();
 ReactDOM.render(
   <Router history={history}>
     <Route exact path="/" component={App} />
-    <Route component={Application} />
+    <Route path="/apply" component={Application} />
     <Route path="/legal" component={legalPage} />
   </Router>,
   document.getElementById("root")

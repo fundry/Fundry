@@ -10,7 +10,7 @@ function App() {
         <Banner /> <br />
         <About />
         <br /> <Legal /> <br />
-        <Recent /> <br />
+        <Recent />
         <Faq />
         <Footer />
       </div>
