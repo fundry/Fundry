@@ -37,12 +37,6 @@ const Position = styled.p`
   font-weight : bold
 `;
 
-const buttonContain = styled.div`
-  margin-top: 4%;
-  margin-right: 5%;
-  text-align: center;
-`;
-
 const Button = styled.button`
   background: #0e2f5a;
   text-align: center;
@@ -72,15 +66,25 @@ const Gallery = styled.div({
   padding: "20px"
 });
 
-const Image = styled.img({
+const Image = {
+  width: "35%",
+  borderRadius: 70,
+  boxShadow: "1px 1px 5px rgba(0,0,0,0.3)",
+  position: "absolute",
+  top: "15%",
+  textAlign: "center"
+};
+
+const Banner = {
+  height: "20vh",
+  paddingTop: "20px",
+  marginBottom: "17%",
   width: "100%",
-  borderRadius: 10,
-  boxShadow: "1px 1px 5px rgba(0,0,0,0.3)"
-});
+  borderRadius: 5,
+  background: "linear-gradient(to bottom,#95ba76,#c1f0d9)"
+};
 
 export default function home() {
-  const randomImages = Array.from({ length: 100 });
-
   return (
     <Div>
       <Title> TEAM </Title>
@@ -89,29 +93,21 @@ export default function home() {
         <Card
           style={{
             borderRadius: "10px",
-            paddingBottom: "20px",
-            paddingTop: "20px"
+            paddingBottom: "20px"
           }}
         >
+          <div style={Banner} />
           <Flex justifyCenter>
             <Img
               rounded
-              style={{
-                width: "15rem",
-                borderRadius: "10rem",
-                height: "35vh"
-              }}
+              style={Image}
               src={
                 "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
               }
               loader={
                 <img
                   alt=" member "
-                  style={{
-                    width: "15rem",
-                    borderRadius: "10rem",
-                    height: "25vh"
-                  }}
+                  style={Image}
                   src={require("../../images/developer.png")}
                 />
               }
@@ -133,29 +129,21 @@ export default function home() {
         <Card
           style={{
             borderRadius: "10px",
-            paddingBottom: "20px",
-            paddingTop: "20px"
+            paddingBottom: "20px"
           }}
         >
+          <div style={Banner} />
           <Flex justifyCenter>
             <Img
               rounded
-              style={{
-                width: "15rem",
-                borderRadius: "10rem",
-                height: "35vh"
-              }}
+              style={Image}
               src={
                 "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
               }
               loader={
                 <img
                   alt=" member "
-                  style={{
-                    width: "15rem",
-                    borderRadius: "10rem",
-                    height: "25vh"
-                  }}
+                  style={Image}
                   src={require("../../images/developer.png")}
                 />
               }
@@ -177,29 +165,21 @@ export default function home() {
         <Card
           style={{
             borderRadius: "10px",
-            paddingBottom: "20px",
-            paddingTop: "20px"
+            paddingBottom: "20px"
           }}
         >
+          <div style={Banner} />
           <Flex justifyCenter>
             <Img
               rounded
-              style={{
-                width: "15rem",
-                borderRadius: "10rem",
-                height: "35vh"
-              }}
+              style={Image}
               src={
                 "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
               }
               loader={
                 <img
                   alt=" member "
-                  style={{
-                    width: "15rem",
-                    borderRadius: "10rem",
-                    height: "25vh"
-                  }}
+                  style={Image}
                   src={require("../../images/developer.png")}
                 />
               }
@@ -221,29 +201,21 @@ export default function home() {
         <Card
           style={{
             borderRadius: "10px",
-            paddingBottom: "20px",
-            paddingTop: "20px"
+            paddingBottom: "20px"
           }}
         >
+          <div style={Banner} />
           <Flex justifyCenter>
             <Img
               rounded
-              style={{
-                width: "15rem",
-                borderRadius: "10rem",
-                height: "35vh"
-              }}
+              style={Image}
               src={
                 "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
               }
               loader={
                 <img
                   alt=" member "
-                  style={{
-                    width: "15rem",
-                    borderRadius: "10rem",
-                    height: "25vh"
-                  }}
+                  style={Image}
                   src={require("../../images/developer.png")}
                 />
               }

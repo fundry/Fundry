@@ -6,3 +6,4 @@ export { default as About } from "./about/about";
 export { default as Faq } from "./FAQ/faq";
 export { default as Recent } from "./recent/recent";
 export { default as Application } from "./application/application";
+export { default as Form } from "./application/forms/form";

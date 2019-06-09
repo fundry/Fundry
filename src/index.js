@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { Application, legalPage } from "./components/index";
+import { Application, legalPage, Form } from "./components/index";
 import * as serviceWorker from "./serviceWorker";
 import { Router, Route } from "react-router";
 import { createBrowserHistory } from "history";
@@ -12,6 +12,7 @@ ReactDOM.render(
     <Route exact path="/" component={App} />
     <Route path="/apply" component={Application} />
     <Route path="/legal" component={legalPage} />
+    <Route path="/form" component={Form} />
   </Router>,
   document.getElementById("root")
 );

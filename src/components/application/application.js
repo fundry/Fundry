@@ -2,23 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "../footer/footer";
 import Header from "../banner/header";
+import Flex from "styled-flex-component";
+import { Link } from "react-router-dom";
 
-const Div = styled.div`
-  width: 100%
-  background: #f2f5ff
-  height : 20vh
+const Text = styled.p`
+  padding-top: 1%;
+  padding: 2em;
+  color: #0e2f5a;
 `;
 
-const Title = styled.p`
-font-weight : bold
-font-size : 1.3em
-text-align : right
-padding-right : 5%
-`;
-
-const Text = styled.h4`
-  text-align :  center
-  padding-top : 5% 
+const Head = styled.h4`
+  text-align: center;
+  padding: 1em;
+  color: #0e2f5a;
 `;
 
 const Button = styled.button`
@@ -42,14 +38,43 @@ export default function home() {
     <>
       <Header />
 
-      <Div>
-        <Title> PROJECTS </Title>
-        <Text> APPLICATION PAGE</Text>
+      <div>
+        <Head>Thank you for interest in joining the Fundry Program !</Head>
+        <Text>
+          kfjgjvd.d,v ,vjn jdfd.kjdv hd vdd.,l vdhjdckdldv fjdjvd,.mnv
+          lfndmcndlkjvd dfldnvdv. nd vjdvd,nvdk, .dlvdnvdn kfjgjvd.d,v ,vjn
+          jdfd.kjdv hd vdd.,l vdhjdckdldv fjdjvd,.mnv lfndmcndlkjvd dfldnvdv. nd
+          vjdvd,nvdk, .dlvdnvdn kfjgjvd.d,v ,vjn jdfd.kjdv hd vdd.,l vdhjdckdldv
+          fjdjvd,.mnv lfndmcndlkjvd dfldnvdv. nd vjdvd,nvdk, .dlvdnvdn
+          kfjgjvd.d,v ,vjn jdfd.kjdv hd vdd.,l vdhjdckdldv fjdjvd,.mnv
+        </Text>
 
-        <Button> Create Application </Button>
-        <Button> Download Sample Form </Button>
-        <Footer showFeedback={false} />
-      </Div>
+        <div>
+          <p style={{ textAlign: "center" }}>
+            Please carefully go through our <a href="/"> Policies </a>{" "}
+          </p>
+
+          <Flex justifyCenter>
+            <Link to="/form">
+              <Button> Create Application </Button>
+            </Link>
+
+            <Button> Download Sample Form </Button>
+          </Flex>
+
+          <Text>
+            kfjgjvd.d,v ,vjn jdfd.kjdv hd vdd.,l vdhjdckdldv fjdjvd,.mnv
+            lfndmcndlkjvd dfldnvdv. nd vjdvd,nvdk, .dlvdnvdn kfjgjvd.d,v ,vjn
+            jdfd.kjdv hd vdd.,l vdhjdckdldv fjdjvd,.mnv lfndmcndlkjvd dfldnvdv.
+            nd vjdvd,nvdk, .dlvdnvdn kfjgjvd.d,v ,vjn jdfd.kjdv hd vdd.,l
+            vdhjdckdldv fjdjvd,.mnv lfndmcndlkjvd dfldnvdv. nd vjdvd,nvdk,
+            .dlvdnvdn kfjgjvd.d,v ,vjn jdfd.kjdv hd vdd.,l vdhjdckdldv
+            fjdjvd,.mnv lfndmcndlkjvd dfldnvdv. nd vjdvd,nvdk, .dlvdnvdn
+            kfjgjvd.d,v ,vjn
+          </Text>
+        </div>
+      </div>
+      <Footer showFeedback={false} />
     </>
   );
 }

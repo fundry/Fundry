@@ -4,6 +4,7 @@ import Operation from "./operation";
 import Uses from "./uses";
 import { Grid } from "semantic-ui-react";
 import { ReactComponent as Bulb } from "./svg/bulb.svg";
+import Flex from "styled-flex-component";
 
 const Div = styled.div`
   width: 100%
@@ -28,9 +29,9 @@ export default function home() {
         <Grid stackable columns="equal">
           <Grid.Row>
             <Grid.Column>
-              <Bulb
-                style={{ height: "20vh", width: "50%", marginLeft: "30%" }}
-              />
+              <Flex justifyCenter>
+                <Bulb style={{ height: "20vh", width: "50%" }} />
+              </Flex>
             </Grid.Column>
 
             <Grid.Column>

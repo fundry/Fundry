@@ -75,13 +75,13 @@ const Header = () => {
                   "https://res.cloudinary.com/dkfptto8m/image/upload/v1558070244/Mongodb%20hackathon%20project/thunder.png"
                 }
               />
-              <Link prefetch href="/">
-                <A>EvoHub</A>
+              <Link href="/">
+                <A>Fundry</A>
               </Link>
             </Flex>
           </NameDiv>
 
-          <div>{windowWidth >= 650 ? <p> hello</p> : <p> How far ??</p>}</div>
+          <div>{windowWidth >= 650 ? <p> . </p> : <p> ..</p>}</div>
 
           <Flex>
             <A href="/">EvoHub</A>
