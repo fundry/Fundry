@@ -29,7 +29,7 @@ export default function home() {
           <Grid.Row>
             <Grid.Column>
               <Bulb
-                style={{ height: "20vh", width: "50%", marginLeft: "40%" }}
+                style={{ height: "20vh", width: "50%", marginLeft: "30%" }}
               />
             </Grid.Column>
 

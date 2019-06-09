@@ -6,12 +6,12 @@ import SplitText from "react-pose-text";
 import Quote from "./text/quote";
 import Flex from "styled-flex-component";
 import Header from "./header";
+import Sponsors from "./sponsors";
 
 // remove height property later to increase responsivness ...
 const Div = styled.div`
   width: 100%
-  height : 50vh
-  background: linear-gradient(to bottom,#1497e2,#1549e6);
+  background :  #f9db93
 `;
 
 const Text = styled.p`
@@ -25,10 +25,10 @@ const Text = styled.p`
 `;
 
 const Head = styled.p`
-  color : #fff
+  color : #000
   text-align: center
   font-weight: bold
-  font-size: 2em
+  font-size: 1.5em
   padding-bottom: 3%
   width : 50%
 `;
@@ -52,7 +52,7 @@ export default function home() {
       <Header />
 
       <Div>
-        <div style={{ paddingTop: "10%", textAlign: "right" }}>
+        <div style={{ paddingTop: "5%", textAlign: "right" }}>
           <Quote />
 
           <Sidebar initialPose="exit" pose="enter">
@@ -64,6 +64,7 @@ export default function home() {
           </Sidebar>
         </div>
       </Div>
+      <Sponsors />
     </>
   );
 }

@@ -51,7 +51,8 @@ class Header extends React.Component {
     // });
 
     const Div = styled.div`
-      height: 8vh;
+      height: 9vh
+      background : #444444
       padding-top: 1%;
     `;
     const A = styled.a`
@@ -75,7 +76,7 @@ class Header extends React.Component {
     const Button = styled.button`
       background: #0e2f5a;
       text-align: right;
-      border-radius: 4px;
+      border-radius: 7px;
       height: 30px;
       border: 1px solid #0e2f5a;
       color: #fff;
