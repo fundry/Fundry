@@ -14,11 +14,7 @@ export default class reset extends Component {
         <Div>
           {" "}
           <br />
-          <Segment
-            inverted
-            vertical
-            style={{ padding: "5em 0em", backgroundColor: "#111111" }}
-          >
+          <Segment inverted vertical style={{ backgroundColor: "#111111" }}>
             <Container>
               <Grid divided inverted stackable>
                 <Grid.Row>
@@ -105,10 +101,10 @@ export default class reset extends Component {
             </Container>
 
             <div>
-              <h5 style={{ textAlign: "center", marginTop: "2em" }}>
+              <h6 style={{ textAlign: "center", marginTop: "1em" }}>
                 {" "}
                 Copyright © {new Date().getFullYear()} . All rights reserved .
-              </h5>
+              </h6>
             </div>
           </Segment>
         </Div>

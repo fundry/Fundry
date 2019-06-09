@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Footer from "../footer/footer";
+import Header from "../banner/header";
 
 const Div = styled.div`
   width: 100%
@@ -38,13 +39,17 @@ const Button = styled.button`
 
 export default function home() {
   return (
-    <Div>
-      <Title> PROJECTS </Title>
-      <Text> APPLICATION PAGE</Text>
+    <>
+      <Header />
 
-      <Button> Create Application </Button>
-      <Button> Download Sample Form </Button>
-      <Footer showFeedback={false} />
-    </Div>
+      <Div>
+        <Title> PROJECTS </Title>
+        <Text> APPLICATION PAGE</Text>
+
+        <Button> Create Application </Button>
+        <Button> Download Sample Form </Button>
+        <Footer showFeedback={false} />
+      </Div>
+    </>
   );
 }

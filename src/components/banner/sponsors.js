@@ -13,7 +13,7 @@ const Text = styled.p`
 
 export default function home() {
   return (
-    <Card className="shadow p-3 mb-5 bg-white rounded">
+    <Card className="shadow-lg p-3 mb-5 bg-red rounded">
       <Flex>
         <Text> tests </Text>
       </Flex>

@@ -73,7 +73,7 @@ export default function home() {
           </Grid>
         </Contain>
       </Flex>
-      <Link to="./application">
+      <Link to="./apply">
         <div style={{ textAlign: "right", paddingBottom: "5px" }}>
           <Button> Begin Process </Button>
         </div>

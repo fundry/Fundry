@@ -9,7 +9,7 @@ import { ReactComponent as Develop } from "./svg/develop.svg";
 const Text = styled.p`
   text-align :  center
   padding-top : 5% 
-  font-size : 1.2em
+  font-size : 1.3em
 `;
 
 const Contain = styled.div`
@@ -38,23 +38,48 @@ export default function home() {
             <Grid.Column>
               <Contain>
                 <Rocket style={{ maxHeight: "15vh", Bottom: 0 }} />
-                <Text>
-                  <strong> Review </strong>
-                </Text>
+                <Flex column>
+                  <Text>
+                    <strong> Review </strong>
+                  </Text>
+
+                  <p>
+                    {" "}
+                    Get an immediate review on your idea from our team members{" "}
+                  </p>
+                </Flex>
               </Contain>
             </Grid.Column>
             <Grid.Column>
               <Contain>
                 <Rocket style={{ maxHeight: "15vh", Bottom: 0 }} />
-                <Text>
-                  <strong> Optimize </strong>
-                </Text>
+                <Flex column>
+                  <Text>
+                    <strong> Refactor </strong>
+                  </Text>
+
+                  <p>
+                    {" "}
+                    Recieve ways to restructure and optimize your idea based on
+                    previous review{" "}
+                  </p>
+                </Flex>
               </Contain>
             </Grid.Column>
             <Grid.Column>
               <Contain>
                 <Legal style={{ maxHeight: "15vh", Bottom: 0 }} />
-                <Text>Legal Structure</Text>
+                <Flex column>
+                  <Text>
+                    <strong> Build </strong>
+                  </Text>
+
+                  <p>
+                    {" "}
+                    Begin the actual development and implementation of your
+                    idea.{" "}
+                  </p>
+                </Flex>
               </Contain>
             </Grid.Column>{" "}
             <br /> <br /> <br />
