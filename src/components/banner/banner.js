@@ -5,6 +5,7 @@ import posed from "react-pose";
 import SplitText from "react-pose-text";
 import Quote from "./text/quote";
 import Flex from "styled-flex-component";
+import Header from "./header";
 
 // remove height property later to increase responsivness ...
 const Div = styled.div`
@@ -23,7 +24,7 @@ const Text = styled.p`
   padding-top : 5px
 `;
 
-const Header = styled.p`
+const Head = styled.p`
   color : #fff
   text-align: center
   font-weight: bold
@@ -47,18 +48,22 @@ const charPoses = {
 
 export default function home() {
   return (
-    <Div>
-      <div style={{ paddingTop: "10%", textAlign: "right" }}>
-        <Quote />
+    <>
+      <Header />
 
-        <Sidebar initialPose="exit" pose="enter">
-          <Header>
-            <SplitText charPoses={charPoses}>
-              Providing a launchpad to build for the next Billion Users.
-            </SplitText>
-          </Header>
-        </Sidebar>
-      </div>
-    </Div>
+      <Div>
+        <div style={{ paddingTop: "10%", textAlign: "right" }}>
+          <Quote />
+
+          <Sidebar initialPose="exit" pose="enter">
+            <Head>
+              <SplitText charPoses={charPoses}>
+                Providing a launchpad to build for the next Billion Users.
+              </SplitText>
+            </Head>
+          </Sidebar>
+        </div>
+      </Div>
+    </>
   );
 }

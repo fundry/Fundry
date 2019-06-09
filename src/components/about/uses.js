@@ -43,7 +43,7 @@ export default function home() {
           <Grid.Row columns="3">
             <Grid.Column>
               <Contain>
-                <Rocket style={{ maxHeight: "30vh", Bottom: 0 }} />
+                <Rocket style={{ maxHeight: "25vh", Bottom: 0 }} />
                 <Text>
                   <strong> Review </strong> your Idea{" "}
                 </Text>
@@ -51,7 +51,7 @@ export default function home() {
             </Grid.Column>
             <Grid.Column>
               <Contain>
-                <Rocket style={{ maxHeight: "30vh", Bottom: 0 }} />
+                <Rocket style={{ maxHeight: "25vh", Bottom: 0 }} />
                 <Text>
                   <strong> Optimize </strong> your Idea{" "}
                 </Text>
@@ -59,7 +59,7 @@ export default function home() {
             </Grid.Column>
             <Grid.Column>
               <Contain>
-                <Legal style={{ maxHeight: "30vh", Bottom: 0 }} />
+                <Legal style={{ maxHeight: "25vh", Bottom: 0 }} />
                 <Text>
                   {" "}
                   <strong> Build </strong> your Legal Structure{" "}
@@ -79,13 +79,13 @@ export default function home() {
             </Grid.Column>{" "}
             <Grid.Column>
               <Contain>
-                <Rocket style={{ maxHeight: "30vh", Bottom: 0 }} />
+                <Rocket style={{ maxHeight: "25vh", Bottom: 0 }} />
                 <Text> Develop your Idea </Text>
               </Contain>
             </Grid.Column>
             <Grid.Column>
               <Contain>
-                <Rocket style={{ maxHeight: "30vh", Bottom: 0 }} />
+                <Rocket style={{ maxHeight: "25vh", Bottom: 0 }} />
                 <Text> Raise funds for your service </Text>
               </Contain>
             </Grid.Column>
