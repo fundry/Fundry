@@ -7,11 +7,12 @@ import Quote from "./text/quote";
 import Flex from "styled-flex-component";
 import Header from "./header";
 import Sponsors from "./sponsors";
+import { ReactComponent as Image } from "./banner.svg";
 
 // remove height property later to increase responsivness ...
 const Div = styled.div`
   width: 100%
-  background :  #f9db93
+  background :  #E5E5E5
 `;
 
 const Text = styled.p`
@@ -52,6 +53,8 @@ export default function home() {
       <Header />
 
       <Div>
+        <Image style={{ maxHeight: "55%", maxWidth: "70%" }} />
+
         <div style={{ paddingTop: "5%", textAlign: "right" }}>
           <Quote />
 
