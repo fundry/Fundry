@@ -80,8 +80,7 @@ const login = () => {
                 LOGIN{" "}
               </h4>
               <p style={{ textAlign: "center" }}>
-                {" "}
-                Login into an existing account{" "}
+                Login into an existing account
               </p>
               <hr />
             </div>

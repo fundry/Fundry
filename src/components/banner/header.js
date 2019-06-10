@@ -4,6 +4,7 @@ import Img from "react-image";
 import styled from "styled-components";
 import Flex from "styled-flex-component";
 import { media } from "../media_style";
+import { AuthConsumer } from "../auth/protected/AuthContext";
 
 const Header = () => {
   const Div = styled.div`
@@ -45,21 +46,6 @@ const Header = () => {
     }
   `;
 
-  const Login = styled.button`
-    background: #fff;
-    text-align: right;
-    border-radius: 4px;
-    height: 30px;
-    border: 2px solid #0e2f5a;
-    color: #0e2f5a;
-    margin: 0 1em;
-    padding: 0.25em 1em;
-    font-size: 1em;
-    &:hover {
-      color: #fff;
-      background: #0e2f5a;
-    }
-  `;
   // react hooks && event listeners
   const NameDiv = styled.div`
     margin-left: 4%;
@@ -80,32 +66,47 @@ const Header = () => {
   });
 
   return (
-    <Div>
-      <nav>
-        <Flex justifyBetween>
-          <NameDiv>
-            <Flex>
-              <Image
-                src={
-                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1558070244/Mongodb%20hackathon%20project/thunder.png"
-                }
-              />
-              <Link href="/">
-                <A>Fundry</A>
-              </Link>
+    <AuthConsumer>
+      {({ isAuth, login, logout }) => (
+        <Div>
+          <nav>
+            <Flex justifyBetween>
+              <NameDiv>
+                <Flex>
+                  <Image
+                    src={
+                      "https://res.cloudinary.com/dkfptto8m/image/upload/v1558070244/Mongodb%20hackathon%20project/thunder.png"
+                    }
+                  />
+                  <Link href="/">
+                    <A>Fundry</A>
+                  </Link>
+                </Flex>
+              </NameDiv>
+
+              <div>{windowWidth >= 650 ? <p> . </p> : <p> ..</p>}</div>
+
+              {isAuth ? (
+                <Flex>
+                  <Button> Apply </Button>
+                  <Button onClick={logout}> Logout </Button>
+                  <Button> Profile </Button>
+                </Flex>
+              ) : (
+                <Flex>
+                  <Link to="/apply">
+                    <Button> Apply </Button>
+                  </Link>
+                  <Link to="/login">
+                    <Button onClick={login}> Login </Button>
+                  </Link>
+                </Flex>
+              )}
             </Flex>
-          </NameDiv>
-
-          <div>{windowWidth >= 650 ? <p> . </p> : <p> ..</p>}</div>
-
-          <Flex>
-            <A href="/">EvoHub</A>
-            <Button> Apply </Button>
-            <Login> Login </Login>
-          </Flex>
-        </Flex>
-      </nav>
-    </Div>
+          </nav>
+        </Div>
+      )}
+    </AuthConsumer>
   );
 };
 
