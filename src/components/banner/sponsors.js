@@ -15,7 +15,7 @@ export default function home() {
   return (
     <Card className="shadow-lg p-3 mb-5 bg-red rounded">
       <Flex>
-        <Text> tests </Text>
+        <Text> List of supporting firms && companies </Text>
       </Flex>
     </Card>
   );

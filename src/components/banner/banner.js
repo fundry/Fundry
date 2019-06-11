@@ -79,13 +79,15 @@ const Home = () => {
         <div>
           <Div>
             <Flex>
-              <Image style={{ maxHeight: "70%", maxWidth: "75%" }} />
+              <Image
+                style={{ maxHeight: "70%", maxWidth: "75%", paddingTop: "4%" }}
+              />
 
-              <div style={{ paddingTop: "5%", textAlign: "center" }}>
+              <div style={{ paddingTop: "2%", textAlign: "center" }}>
                 <Quote />
 
                 <Sidebar initialPose="exit" pose="enter">
-                  <Head style={{ marginLeft: "5%" }}>
+                  <Head style={{ marginLeft: "5%", fontSize: "2em" }}>
                     <SplitText charPoses={charPoses}>
                       Providing a launchpad to build for the next Billion Users.
                     </SplitText>
@@ -108,15 +110,18 @@ const Home = () => {
             </div>
             <div style={{ paddingTop: "5%", textAlign: "center" }}>
               <Quote />
-
               <Sidebar initialPose="exit" pose="enter">
                 <Head style={{ marginLeft: "10%" }}>
                   <SplitText charPoses={charPoses}>
                     Providing a launchpad to build for the next Billion Users.
                   </SplitText>
                 </Head>
-              </Sidebar>
-            </div>
+              </Sidebar>{" "}
+              <Flex justifyCenter>
+                <Button> Get Started </Button>
+              </Flex>
+            </div>{" "}
+            <br /> <br />
           </Div>
         </div>
       )}
