@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Flex from "styled-flex-component";
+import Header from "../../banner/header";
+import Footer from "../../footer/footer";
+import { ReactComponent as Detail } from "../svg/detail.svg";
 
 const Div = styled.div`
   width: 100%
@@ -18,8 +21,14 @@ const Text = styled.p``;
 
 export default function home() {
   return (
-    <Div>
-      <h1> FORMS PAGE </h1>
-    </Div>
+    <>
+      <Header />
+      <Detail style={{ maxHeight: "35vh", marginLeft: "40%" }} />
+      <Div>
+        <h1> FORMS PAGE </h1>
+      </Div>
+
+      <Footer showFeedback={false} />
+    </>
   );
 }

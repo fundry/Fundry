@@ -54,7 +54,7 @@ const login = () => {
   return (
     <div
       style={{
-        backgroundColor: "#f2f5ff",
+        backgroundColor: "#b8deff",
         paddingBottom: "100vh"
       }}
     >

@@ -4,6 +4,7 @@ import Footer from "../footer/footer";
 import Header from "../banner/header";
 import Flex from "styled-flex-component";
 import { Link } from "react-router-dom";
+import { ReactComponent as Intro } from "./svg/intro.svg";
 
 const Text = styled.p`
   padding-top: 1%;
@@ -37,6 +38,8 @@ export default function home() {
   return (
     <>
       <Header />
+
+      <Intro style={{ maxHeight: "35vh", marginLeft: "40%" }} />
 
       <div>
         <Head>Thank you for interest in joining the Fundry Program !</Head>
