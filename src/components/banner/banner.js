@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Grid } from "semantic-ui-react";
 import posed from "react-pose";
 import SplitText from "react-pose-text";
 import Quote from "./text/quote";
@@ -16,14 +15,36 @@ const Div = styled.div`
   background :  #f9db93
 `;
 
-const Text = styled.p`
-  color : #f9db93
-  // font-family :   comic sans ms;
-  font-size : 4em
-  margin-right : 10%
-  margin-right : 10%
-  padding-left : 5px
-  padding-top : 5px
+const Box = posed.div({
+  hoverable: true,
+  pressable: true,
+  init: {
+    paddingTop: "15px",
+    scale: 1,
+    boxShadow: "0px 0px 0px rgba(0,0,0,0)"
+  },
+  hover: {
+    scale: 1.2,
+    boxShadow: "0px 5px 10px rgba(0,0,0,0.2)"
+  },
+  press: {
+    scale: 1.1,
+    boxShadow: "0px 2px 5px rgba(0,0,0,0.1)"
+  }
+});
+
+const Button = styled(Box)`
+  background: #0748a8;
+  text-align: center;
+  border-radius: 5px;
+  height: 50px;
+  padding-top: 5px;
+  width: 40%;
+  border: 0.5px solid palevioletred;
+  color: white;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+  font-size: 0.95em;
 `;
 
 const Head = styled.p`
@@ -70,8 +91,13 @@ const Home = () => {
                     </SplitText>
                   </Head>
                 </Sidebar>
+
+                <Flex justifyCenter>
+                  <Button> Get Started </Button>
+                </Flex>
               </div>
             </Flex>
+            <br />
           </Div>
         </div>
       ) : (
