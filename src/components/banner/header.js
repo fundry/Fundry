@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Flex from "styled-flex-component";
 import { media } from "../media_style";
 import { AuthConsumer } from "../auth/protected/AuthContext";
+import useWindowWidth from "../hook_style";
 
 const Header = () => {
   const Div = styled.div`
@@ -51,20 +52,7 @@ const Header = () => {
     margin-left: 4%;
   `;
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  const handleWindowResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  });
-
+  const hooks = useWindowWidth();
   return (
     <AuthConsumer>
       {({ isAuth, login, logout }) => (
@@ -84,7 +72,7 @@ const Header = () => {
                 </Flex>
               </NameDiv>
 
-              <div>{windowWidth >= 650 ? <p> . </p> : <p> ..</p>}</div>
+              <div>{hooks >= 650 ? <p> . </p> : <p> ..</p>}</div>
 
               {isAuth ? (
                 <Flex>

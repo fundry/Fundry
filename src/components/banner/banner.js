@@ -7,12 +7,13 @@ import Quote from "./text/quote";
 import Flex from "styled-flex-component";
 import Header from "./header";
 import Sponsors from "./sponsors";
-import { ReactComponent as Image } from "./banner.svg";
+import { ReactComponent as Image } from "./baner.svg";
+import useWindowWidth from "../hook_style";
 
 // remove height property later to increase responsivness ...
 const Div = styled.div`
   width: 100%
-  background :  #E5E5E5
+  background :  #f9db93
 `;
 
 const Text = styled.p`
@@ -31,7 +32,7 @@ const Head = styled.p`
   font-weight: bold
   font-size: 1.5em
   padding-bottom: 3%
-  width : 50%
+  width : 70%
 `;
 
 const Sidebar = posed.div({
@@ -47,27 +48,56 @@ const charPoses = {
   enter: { opacity: 1 }
 };
 
-export default function home() {
+const Home = () => {
+  const test = useWindowWidth();
+
   return (
     <>
       <Header />
+      {test >= 700 ? (
+        <div>
+          <Div>
+            <Flex>
+              <Image style={{ maxHeight: "70%", maxWidth: "75%" }} />
 
-      <Div>
-        <Image style={{ maxHeight: "55%", maxWidth: "70%" }} />
+              <div style={{ paddingTop: "5%", textAlign: "center" }}>
+                <Quote />
 
-        <div style={{ paddingTop: "5%", textAlign: "right" }}>
-          <Quote />
-
-          <Sidebar initialPose="exit" pose="enter">
-            <Head>
-              <SplitText charPoses={charPoses}>
-                Providing a launchpad to build for the next Billion Users.
-              </SplitText>
-            </Head>
-          </Sidebar>
+                <Sidebar initialPose="exit" pose="enter">
+                  <Head style={{ marginLeft: "5%" }}>
+                    <SplitText charPoses={charPoses}>
+                      Providing a launchpad to build for the next Billion Users.
+                    </SplitText>
+                  </Head>
+                </Sidebar>
+              </div>
+            </Flex>
+          </Div>
         </div>
-      </Div>
+      ) : (
+        <div>
+          <Div>
+            <div style={{ textAlign: "center" }}>
+              <Image />
+            </div>
+            <div style={{ paddingTop: "5%", textAlign: "center" }}>
+              <Quote />
+
+              <Sidebar initialPose="exit" pose="enter">
+                <Head style={{ marginLeft: "10%" }}>
+                  <SplitText charPoses={charPoses}>
+                    Providing a launchpad to build for the next Billion Users.
+                  </SplitText>
+                </Head>
+              </Sidebar>
+            </div>
+          </Div>
+        </div>
+      )}
+
       <Sponsors />
     </>
   );
-}
+};
+
+export default Home;
