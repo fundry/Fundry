@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Customer, Form, Dev } from "./svg/index";
 import { Grid } from "semantic-ui-react";
 import Flex from "styled-flex-component";
+import { ReactComponent as Process } from "./svg/process.svg";
 
 const Div = styled.div`
   width: 95%
@@ -51,28 +52,9 @@ export default function home() {
   return (
     <Div>
       <Header> APPLICATION </Header>
-      <Flex justifyCenter>
-        <Contain>
-          <Grid stackable columns="equal">
-            <Grid.Row>
-              <Grid.Column>
-                <Flex column>
-                  <img src={Form} />
-                  <Text> Create Application </Text>
-                </Flex>
-              </Grid.Column>
-              <Grid.Column>
-                <img src={Customer} />
-                <Text> Interact </Text>
-              </Grid.Column>{" "}
-              <Grid.Column>
-                <img src={Dev} />
-                <Text> Begin Development </Text>
-              </Grid.Column>{" "}
-            </Grid.Row>
-          </Grid>
-        </Contain>
-      </Flex>
+
+      <Process />
+
       <Link to="./apply">
         <div style={{ textAlign: "right", paddingBottom: "5px" }}>
           <Button> Begin Process </Button>

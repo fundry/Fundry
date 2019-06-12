@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Operation from "./operation";
 import Uses from "./uses";
 import { Grid } from "semantic-ui-react";
-import { ReactComponent as Bulb } from "./svg/bulb.svg";
+import { ReactComponent as Bulb } from "./svg/top.svg";
+import { ReactComponent as Bottom } from "./svg/bottom.svg";
 import Flex from "styled-flex-component";
 import useWindowWidth from "../hook_style";
 
@@ -46,6 +47,7 @@ const About = () => {
                   4t4efed 3r3 e23e3r e2e2
                 </Text>
               </Grid.Column>
+              <Bottom style={{ height: "30vh", width: "57%" }} />
             </Grid.Row>
           </Grid>
         </Contain>
