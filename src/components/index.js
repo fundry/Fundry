@@ -12,3 +12,4 @@ export { default as Protected } from "./auth/protected/protectedRoute";
 export { default as Login } from "./auth/login";
 export { default as Reset } from "./auth/reset";
 export { default as Signup } from "./auth/signup";
+export { default as Press } from "./press/press";

@@ -28,7 +28,7 @@ font-weight: bold
 `;
 
 const Text = styled.p`
-  padding-top  : '5%
+  padding-top: 5%;
 `;
 
 const Box = posed.div({
