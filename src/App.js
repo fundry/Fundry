@@ -7,7 +7,7 @@ function App() {
   return (
     <ApolloProvider client={Client}>
       <div>
-        <Banner /> <br />
+        <Banner />
         <About />
         <br /> <Legal /> <br /> <br /> <br /> <br />
         <Recent />

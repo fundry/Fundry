@@ -3,6 +3,8 @@ import Header from "../banner/header";
 import Flex from "styled-flex-component";
 import styled from "styled-components";
 import { Card } from "react-bootstrap";
+import { Icon } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 const login = () => {
   const Input = styled.input`
@@ -18,8 +20,7 @@ const login = () => {
 		color: white;
 		margin: 0 1em;
 		height: 50px;
-		width: 30%;
-		padding: 0.25em 1em;
+		padding: 0.25em 3em;
 		margin-top: 10px;
 		padding-top: 15px;
 		font-size: 1em;
@@ -38,10 +39,9 @@ const login = () => {
 		color: white;
 		margin: 0 1em;
 		height: 50px; 
-		width: 50%;
-		padding: 0.25em 1em;
+		padding: 0.25em 3em;
 		margin-top: 10px;
-		padding-top: 15px;
+		padding-top: 10px;
 		font-size: 1.2em;
 		&:hover {
 			color: #0e2f5a;;
@@ -55,7 +55,7 @@ const login = () => {
     <div
       style={{
         backgroundColor: "#b8deff",
-        paddingBottom: "100vh"
+        paddingBottom: "15vh"
       }}
     >
       <Header />
@@ -67,9 +67,9 @@ const login = () => {
               width: "85%",
               background: "#fff",
               marginTop: "10%",
-              paddingTop: "5%",
-              paddingRight: "5%",
-              paddingLeft: "5%",
+              paddingTop: "2%",
+              paddingRight: "2%",
+              paddingLeft: "2%",
               paddingBottom: "5%",
               borderRadius: "10px"
             }}
@@ -123,7 +123,9 @@ const login = () => {
               </Flex>
 
               <Flex justifyCenter>
-                <Button> Login </Button>
+                <Link to="/profile">
+                  <Button> Login </Button>
+                </Link>
               </Flex>
             </form>
 
@@ -131,10 +133,19 @@ const login = () => {
               <a href="/"> Forgot Password </a>
             </div>
 
+            <div style={{ paddingTop: "5%", paddingBottom: "5%" }}>
+              <Flex justifyAround>
+                <Icon name="google" size="big" />
+                <Icon name="facebook" size="big" />
+              </Flex>
+            </div>
+
             <div style={{ marginTop: "20px" }}>
               <hr />
               <Flex justifyCenter>
-                <Create>Create Account</Create>
+                <Link to="/signup">
+                  <Create>Create Account</Create>
+                </Link>
               </Flex>
             </div>
           </Card>

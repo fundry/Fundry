@@ -87,7 +87,7 @@ const Home = () => {
                 <Quote />
 
                 <Sidebar initialPose="exit" pose="enter">
-                  <Head style={{ marginLeft: "5%", fontSize: "2em" }}>
+                  <Head style={{ marginLeft: "15%", fontSize: "2em" }}>
                     <SplitText charPoses={charPoses}>
                       Providing a launchpad to build for the next Billion Users.
                     </SplitText>
