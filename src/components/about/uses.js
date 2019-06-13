@@ -6,6 +6,8 @@ import { ReactComponent as Rocket } from "./svg/rocket.svg";
 import { ReactComponent as Legal } from "./svg/legal.svg";
 import { ReactComponent as Develop } from "./svg/develop.svg";
 
+import Access from "./access";
+
 const Text = styled.p`
   text-align :  center
   padding-top : 5% 
@@ -92,6 +94,9 @@ export default function home() {
             <br /> <br /> <br />
           </Grid.Row>
         </Grid>
+
+        <br />
+        <Access />
       </Card>
     </Flex>
   );
