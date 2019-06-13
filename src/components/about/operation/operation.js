@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Customer, Form, Dev } from "./svg/index";
+import { Customer, Form, Dev } from "../svg/index";
 import { Grid } from "semantic-ui-react";
 import Flex from "styled-flex-component";
-import { ReactComponent as Process } from "./svg/process.svg";
-import useWindowWidth from "../hook_style";
+import { ReactComponent as Process } from "../svg/process.svg";
+import useWindowWidth from "../../hook_style";
+import Desktop from "./desktop";
 
 const Div = styled.div`
   width: 100%
@@ -39,6 +40,8 @@ const Header = styled.p`
 `;
 
 const Operation = () => {
+  const hooks = useWindowWidth();
+
   return (
     <Div>
       <Header> How Does It Work ? </Header>
@@ -53,7 +56,7 @@ const Operation = () => {
         Development Phase
       </p>
 
-      <Process />
+      <Desktop />
 
       <Link to="./apply">
         <div style={{ textAlign: "right", paddingBottom: "5px" }}>

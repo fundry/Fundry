@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Operation from "./operation";
+import Operation from "./operation/operation";
 import Uses from "./uses";
 import { Grid } from "semantic-ui-react";
 import { ReactComponent as Bulb } from "./svg/top.svg";
