@@ -39,11 +39,10 @@ const Button = styled(Box)`
   border-radius: 5px;
   height: 50px;
   padding-top: 5px;
-  width: 40%;
   border: 0.5px solid palevioletred;
   color: white;
   margin: 0 1em;
-  padding: 0.25em 1em;
+  padding: 0.25em 2em;
   font-size: 0.95em;
 `;
 
@@ -75,7 +74,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      {test >= 700 ? (
+      {test >= 750 ? (
         <div>
           <Div>
             <Flex>
@@ -85,21 +84,19 @@ const Home = () => {
 
               <div style={{ paddingTop: "2%", textAlign: "center" }}>
                 <Quote />
-
                 <Sidebar initialPose="exit" pose="enter">
-                  <Head style={{ marginLeft: "15%", fontSize: "2em" }}>
+                  <Head style={{ marginLeft: "15%", fontSize: "1.7em" }}>
                     <SplitText charPoses={charPoses}>
                       Providing a launchpad to build for the next Billion Users.
                     </SplitText>
                   </Head>
                 </Sidebar>
-
                 <Flex justifyCenter>
                   <Button> Get Started </Button>
                 </Flex>
+                <br />
               </div>
             </Flex>
-            <br />
           </Div>
         </div>
       ) : (
@@ -108,17 +105,19 @@ const Home = () => {
             <div style={{ textAlign: "center" }}>
               <Image />
             </div>
-            <div style={{ paddingTop: "5%", textAlign: "center" }}>
+            <div style={{ textAlign: "center" }}>
               <Quote />
-              <Sidebar initialPose="exit" pose="enter">
-                <Head style={{ marginLeft: "10%" }}>
-                  <SplitText charPoses={charPoses}>
-                    Providing a launchpad to build for the next Billion Users.
-                  </SplitText>
-                </Head>
-              </Sidebar>{" "}
               <Flex justifyCenter>
-                <Button> Get Started </Button>
+                <Sidebar initialPose="exit" pose="enter">
+                  <Head style={{ marginLeft: "17.7%" }}>
+                    <SplitText charPoses={charPoses}>
+                      Providing a launchpad to build for the next Billion Users.
+                    </SplitText>
+                  </Head>
+                </Sidebar>{" "}
+              </Flex>
+              <Flex justifyCenter>
+                <Button style={{}}> Get Started </Button>
               </Flex>
             </div>{" "}
             <br /> <br />

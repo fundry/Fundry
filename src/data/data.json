@@ -1,0 +1,26 @@
+{
+  "titles": {
+    "home": "Home ",
+    "login": "Login",
+    "profile": "Profile",
+    "apply": "Application"
+  },
+  "home": {
+    "motto": "",
+    "mission": "",
+    "uses": {
+      "one": {
+        "name": "",
+        "description": ""
+      },
+      "two": {
+        "name": "",
+        "description": ""
+      },
+      "three": {
+        "name": "",
+        "description": ""
+      }
+    }
+  }
+}

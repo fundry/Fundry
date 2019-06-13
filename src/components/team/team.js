@@ -5,7 +5,7 @@ import { Grid, Icon } from "semantic-ui-react";
 import Img from "react-image";
 import { Link } from "react-router-dom";
 import Flex from "styled-flex-component";
-import { media } from "../media_style";
+import useWindowWidth from "../hook_style";
 
 const Div = styled.div`
   margin-top : 3%
@@ -63,7 +63,7 @@ const autoGrid = (minColumnWidth = 150, gridGap = 0) => ({
 
 const Gallery = styled.div({
   ...autoGrid(230, 10),
-  padding: "20px"
+  padding: "4em"
 });
 
 const Image = {
@@ -84,158 +84,309 @@ const Banner = {
   background: "linear-gradient(to bottom,#95ba76,#c1f0d9)"
 };
 
-export default function home() {
+const Home = () => {
+  const hooks = useWindowWidth();
+
   return (
     <Div>
       <Title> TEAM </Title>
+      {hooks >= 650 ? (
+        <Gallery>
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
 
-      <Gallery>
-        <Card
-          style={{
-            borderRadius: "10px",
-            paddingBottom: "20px"
-          }}
-        >
-          <div style={Banner} />
-          <Flex justifyCenter>
-            <Img
-              rounded
-              style={Image}
-              src={
-                "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-              }
-              loader={
-                <img
-                  alt=" member "
-                  style={Image}
-                  src={require("../../images/developer.png")}
-                />
-              }
-              unloader={<h1> NOT LOADED </h1>}
-            />
-          </Flex>
+            <Name>
+              Anybody A. Anybody <br /> <Position> Legal head </Position>
+            </Name>
 
-          <Name>
-            Anybody A. Anybody <br /> <Position> Legal head </Position>
-          </Name>
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+              <Icon name="linkedin" size="big" color="blue" />
+            </Flex>
+          </Card>
 
-          <Flex justifyCenter>
-            <Icon name="facebook" size="big" color="blue" />
-            <Icon name="twitter" size="big" color="blue" />
-            <Icon name="instagram" size="big" color="red" />
-            <Icon name="linkedin" size="big" color="blue" />
-          </Flex>
-        </Card>
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
 
-        <Card
-          style={{
-            borderRadius: "10px",
-            paddingBottom: "20px"
-          }}
-        >
-          <div style={Banner} />
-          <Flex justifyCenter>
-            <Img
-              rounded
-              style={Image}
-              src={
-                "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-              }
-              loader={
-                <img
-                  alt=" member "
-                  style={Image}
-                  src={require("../../images/developer.png")}
-                />
-              }
-              unloader={<h1> NOT LOADED </h1>}
-            />
-          </Flex>
+            <Name>
+              Anybody A. Anybody <br /> <Position> Engineering Lead </Position>
+            </Name>
 
-          <Name>
-            Anybody A. Anybody <br /> <Position> Engineering Lead </Position>
-          </Name>
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+              <Icon name="github" size="big" color="black" />
+            </Flex>
+          </Card>
 
-          <Flex justifyCenter>
-            <Icon name="facebook" size="big" color="blue" />
-            <Icon name="twitter" size="big" color="blue" />
-            <Icon name="instagram" size="big" color="red" />
-            <Icon name="github" size="big" color="black" />
-          </Flex>
-        </Card>
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
 
-        <Card
-          style={{
-            borderRadius: "10px",
-            paddingBottom: "20px"
-          }}
-        >
-          <div style={Banner} />
-          <Flex justifyCenter>
-            <Img
-              rounded
-              style={Image}
-              src={
-                "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-              }
-              loader={
-                <img
-                  alt=" member "
-                  style={Image}
-                  src={require("../../images/developer.png")}
-                />
-              }
-              unloader={<h1> NOT LOADED </h1>}
-            />
-          </Flex>
+            <Name>
+              Anybody A. Anybody <br /> <Position> Legal head </Position>
+            </Name>
 
-          <Name>
-            Anybody A. Anybody <br /> <Position> Legal head </Position>
-          </Name>
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+            </Flex>
+          </Card>
 
-          <Flex justifyCenter>
-            <Icon name="facebook" size="big" color="blue" />
-            <Icon name="twitter" size="big" color="blue" />
-            <Icon name="instagram" size="big" color="red" />
-          </Flex>
-        </Card>
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
 
-        <Card
-          style={{
-            borderRadius: "10px",
-            paddingBottom: "20px"
-          }}
-        >
-          <div style={Banner} />
-          <Flex justifyCenter>
-            <Img
-              rounded
-              style={Image}
-              src={
-                "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-              }
-              loader={
-                <img
-                  alt=" member "
-                  style={Image}
-                  src={require("../../images/developer.png")}
-                />
-              }
-              unloader={<h1> NOT LOADED </h1>}
-            />
-          </Flex>
+            <Name>
+              Anybody A. Anybody <br /> <Position> Legal head </Position>
+            </Name>
 
-          <Name>
-            Anybody A. Anybody <br /> <Position> Legal head </Position>
-          </Name>
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+            </Flex>
+          </Card>
+        </Gallery>
+      ) : (
+        <Gallery>
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
 
-          <Flex justifyCenter>
-            <Icon name="facebook" size="big" color="blue" />
-            <Icon name="twitter" size="big" color="blue" />
-            <Icon name="instagram" size="big" color="red" />
-          </Flex>
-        </Card>
-      </Gallery>
+            <Name>
+              Anybody A. Anybody <br /> <Position> Legal head </Position>
+            </Name>
+
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+              <Icon name="linkedin" size="big" color="blue" />
+            </Flex>
+          </Card>
+
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
+
+            <Name>
+              Anybody A. Anybody <br /> <Position> Engineering Lead </Position>
+            </Name>
+
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+              <Icon name="github" size="big" color="black" />
+            </Flex>
+          </Card>
+
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
+
+            <Name>
+              Anybody A. Anybody <br /> <Position> Legal head </Position>
+            </Name>
+
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+            </Flex>
+          </Card>
+
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
+
+            <Name>
+              Anybody A. Anybody <br /> <Position> Legal head </Position>
+            </Name>
+
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+            </Flex>
+          </Card>
+        </Gallery>
+      )}
 
       <Link to="./team">
         <div style={{ textAlign: "right", paddingRight: "20px" }}>
@@ -244,4 +395,5 @@ export default function home() {
       </Link>
     </Div>
   );
-}
+};
+export default Home;

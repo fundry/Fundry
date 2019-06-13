@@ -12,12 +12,18 @@ const Text = styled.p`
   font-size : 1.3em
 `;
 
+const Head = styled.h4`
+text-align :  center
+padding-top : 2% 
+padding-bottom : 2% 
+`;
+
 const Contain = styled.div`
   text-align: center;
 `;
 
 const Card = styled.div`
-  background: #fbfbfb;
+  background: #18379a;
 `;
 
 export default function home() {
@@ -29,10 +35,11 @@ export default function home() {
           paddingRight: "5%",
           paddingTop: "3%",
           paddingBottom: "5%",
-          width: "90%",
-          color: "#0e2f5a"
+          width: "100%",
+          color: "#FFF"
         }}
       >
+        <Head> Build , Scale and Develop your rough Idea. </Head>
         <Grid>
           <Grid.Row columns="3">
             <Grid.Column>

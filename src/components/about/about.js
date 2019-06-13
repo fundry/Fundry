@@ -64,7 +64,6 @@ const Button = styled(Box)`
   border-radius: 5px;
   height: 50px;
   padding-top: 5px;
-  width: 40%;
   border: 0.5px solid palevioletred;
   color: white;
   margin: 0 1em;
@@ -90,7 +89,7 @@ const About = () => {
 
             <div
               style={{
-                marginTop: "20vh",
+                marginTop: "17vh",
                 marginLeft: "15%",
                 marginRight: "10%"
               }}

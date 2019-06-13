@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Img from "react-image";
 import styled from "styled-components";
 import Flex from "styled-flex-component";
 import { media } from "../media_style";
 import { AuthConsumer } from "../auth/protected/AuthContext";
 import useWindowWidth from "../hook_style";
+import { Icon } from "semantic-ui-react";
 
 const Header = () => {
   const Div = styled.div`
@@ -26,6 +27,11 @@ const Header = () => {
     height: 10%;
   `;
 
+  const Title = styled.a`
+	font-size : 1.5em
+	color  : white
+`;
+
   const Image = styled(Img)`
     width: 7%;
     height: 25px;
@@ -35,11 +41,11 @@ const Header = () => {
     background: #0e2f5a;
     text-align: right;
     border-radius: 7px;
-    height: 30px;
+    height: 40px;
     border: 1px solid #0e2f5a;
     color: #fff;
     margin: 0 1em;
-    padding: 0.25em 1em;
+    padding: 0.25em 2em;
     font-size: 1em;
     &:hover {
       color: #0e2f5a;
@@ -56,43 +62,95 @@ const Header = () => {
   return (
     <AuthConsumer>
       {({ isAuth, login, logout }) => (
-        <Div>
-          <nav>
-            <Flex justifyBetween>
-              <NameDiv>
-                <Flex>
-                  <Image
-                    src={
-                      "https://res.cloudinary.com/dkfptto8m/image/upload/v1558070244/Mongodb%20hackathon%20project/thunder.png"
-                    }
-                  />
-                  <Link href="/">
-                    <A>Fundry</A>
-                  </Link>
-                </Flex>
-              </NameDiv>
+        <div>
+          {hooks >= 720 ? (
+            <Div style={{ paddingTop: "2%" }}>
+              {" "}
+              <nav>
+                <Flex justifyBetween>
+                  <NameDiv>
+                    <Flex>
+                      <Image
+                        src={
+                          "https://res.cloudinary.com/dkfptto8m/image/upload/v1558070244/Mongodb%20hackathon%20project/thunder.png"
+                        }
+                      />
+                      <Link href="/">
+                        <A>Fundry</A>
+                      </Link>
+                    </Flex>
+                  </NameDiv>
 
-              <div>{hooks >= 650 ? <p> . </p> : <p> ..</p>}</div>
+                  {isAuth ? (
+                    <Flex>
+                      <Button> Apply </Button>
+                      <Button onClick={logout}> Logout </Button>
+                      <Button> Profile </Button>
+                    </Flex>
+                  ) : (
+                    <Flex>
+                      <div style={{ paddingRight: "30px" }}>
+                        <Link to="/apply">
+                          <Title> Apply </Title>
+                        </Link>
+                      </div>
+                      <div style={{ paddingRight: "30px" }}>
+                        <Link to="/apply">
+                          <Title> FAQ </Title>
+                        </Link>
+                      </div>
+                      <div style={{ paddingRight: "30px" }}>
+                        <Link to="/apply">
+                          <Title> Team </Title>
+                        </Link>
+                      </div>
+                      <div style={{ paddingRight: "30px" }}>
+                        <Link to="/apply">
+                          <Title> Apply </Title>
+                        </Link>
+                      </div>
+                      <Link to="/login">
+                        <Button onClick={login}> Login </Button>
+                      </Link>
+                    </Flex>
+                  )}
+                </Flex>
+              </nav>
+            </Div>
+          ) : (
+            <Div
+              style={{ height: "5.5vh", paddingTop: "2%", paddingRight: "3%" }}
+            >
+              <nav>
+                <Flex justifyBetween>
+                  <NameDiv>
+                    <Flex>
+                      <Image
+                        src={
+                          "https://res.cloudinary.com/dkfptto8m/image/upload/v1558070244/Mongodb%20hackathon%20project/thunder.png"
+                        }
+                      />
+                      <Link href="/">
+                        <A>Fundry</A>
+                      </Link>
+                    </Flex>
+                  </NameDiv>
 
-              {isAuth ? (
-                <Flex>
-                  <Button> Apply </Button>
-                  <Button onClick={logout}> Logout </Button>
-                  <Button> Profile </Button>
+                  {isAuth ? (
+                    <Icon
+                      name="instagram"
+                      size="large"
+                      color="red"
+                      style={{ paddingRight: "2%" }}
+                    />
+                  ) : (
+                    <Icon name="facebook" color="white" />
+                  )}
                 </Flex>
-              ) : (
-                <Flex>
-                  <Link to="/apply">
-                    <Button> Apply </Button>
-                  </Link>
-                  <Link to="/login">
-                    <Button onClick={login}> Login </Button>
-                  </Link>
-                </Flex>
-              )}
-            </Flex>
-          </nav>
-        </Div>
+              </nav>
+            </Div>
+          )}
+        </div>
       )}
     </AuthConsumer>
   );

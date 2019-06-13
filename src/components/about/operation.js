@@ -7,9 +7,7 @@ import Flex from "styled-flex-component";
 import { ReactComponent as Process } from "./svg/process.svg";
 
 const Div = styled.div`
-  width: 95%
-  margin-left: 2%
-  margin-right: 2%
+  width: 100%
   background: #f4f8fc
   padding-top: 3%
   padding-bottom: 5%
@@ -43,7 +41,7 @@ const Contain = styled.div`
   margin-left: 3%
  text-align: center
   margin-right: 3%
- width: 80%
+ width: 87%
 `;
 
 const Text = styled.p``;
