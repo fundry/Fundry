@@ -5,10 +5,11 @@ import { Customer, Form, Dev } from "./svg/index";
 import { Grid } from "semantic-ui-react";
 import Flex from "styled-flex-component";
 import { ReactComponent as Process } from "./svg/process.svg";
+import useWindowWidth from "../hook_style";
 
 const Div = styled.div`
   width: 100%
-  background: #f4f8fc
+  background:#f4f4f4
   padding-top: 3%
   padding-bottom: 5%
 `;
@@ -33,23 +34,24 @@ const Header = styled.p`
   color : #0748a8
   text-align: right
   padding-right: 5%
-  font-size: 1.3em
+  font-size: 2em
   font-weight : bold
 `;
 
-const Contain = styled.div`
-  margin-left: 3%
- text-align: center
-  margin-right: 3%
- width: 87%
-`;
-
-const Text = styled.p``;
-
-export default function home() {
+const Operation = () => {
   return (
     <Div>
-      <Header> APPLICATION </Header>
+      <Header> How Does It Work ? </Header>
+      <p
+        style={{
+          float: "right",
+          fontSize: "1.3em",
+          paddingRight: "5%",
+          color: "#0e2f5a"
+        }}
+      >
+        Development Phase
+      </p>
 
       <Process />
 
@@ -60,4 +62,6 @@ export default function home() {
       </Link>
     </Div>
   );
-}
+};
+
+export default Operation;

@@ -9,7 +9,7 @@ function App() {
       <div>
         <Banner />
         <About />
-        <br /> <Legal /> <br /> <br />
+        <Legal /> <br /> <br />
         <Press />
         <br /> <br />
         <Recent />

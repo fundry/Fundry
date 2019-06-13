@@ -137,7 +137,6 @@ const About = () => {
 
       <br />
       <Uses />
-      <br />
       <div>
         <Operation />
       </div>

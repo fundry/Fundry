@@ -15,6 +15,7 @@ import * as serviceWorker from "./serviceWorker";
 import { Router, Route, Switch } from "react-router";
 import { createBrowserHistory } from "history";
 import { AuthProvider } from "./components/auth/protected/AuthContext";
+require("react-web-vector-icons/fonts");
 
 const history = createBrowserHistory();
 ReactDOM.render(

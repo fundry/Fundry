@@ -7,6 +7,7 @@ import { media } from "../media_style";
 import { AuthConsumer } from "../auth/protected/AuthContext";
 import useWindowWidth from "../hook_style";
 import { Icon } from "semantic-ui-react";
+import { Feather } from "react-web-vector-icons";
 
 const Header = () => {
   const Div = styled.div`
@@ -137,14 +138,9 @@ const Header = () => {
                   </NameDiv>
 
                   {isAuth ? (
-                    <Icon
-                      name="instagram"
-                      size="large"
-                      color="red"
-                      style={{ paddingRight: "2%" }}
-                    />
+                    <Feather name="menu" color="#fff" size={40} style={{}} />
                   ) : (
-                    <Icon name="facebook" color="white" />
+                    <Feather name="menu" color="#fff" size={40} style={{}} />
                   )}
                 </Flex>
               </nav>
