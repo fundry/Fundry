@@ -6,11 +6,12 @@ import { Grid } from "semantic-ui-react";
 import Flex from "styled-flex-component";
 import { ReactComponent as Process } from "../svg/process.svg";
 import useWindowWidth from "../../hook_style";
-import Desktop from "./desktop";
+import { ReactComponent as Desktop } from "./desktop.svg";
+import Mobile from "./mobile";
 
 const Div = styled.div`
   width: 100%
-  background:#f4f4f4
+  background:#18379a
   padding-top: 3%
   padding-bottom: 5%
 `;
@@ -32,7 +33,7 @@ const Button = styled.button`
 `;
 
 const Header = styled.p`
-  color : #0748a8
+  color : #fff
   text-align: right
   padding-right: 5%
   font-size: 2em
@@ -50,16 +51,20 @@ const Operation = () => {
           float: "right",
           fontSize: "1.3em",
           paddingRight: "5%",
-          color: "#0e2f5a"
+          color: "#fff"
         }}
       >
         Development Phase
       </p>
-
-      <Desktop />
-
+      {hooks >= 720 ? <Desktop /> : <Mobile />}
       <Link to="./apply">
-        <div style={{ textAlign: "right", paddingBottom: "5px" }}>
+        <div
+          style={{
+            textAlign: "right",
+            paddingBottom: "5px",
+            paddingTop: "15px"
+          }}
+        >
           <Button> Begin Process </Button>
         </div>
       </Link>

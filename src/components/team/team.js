@@ -95,7 +95,8 @@ const Home = () => {
           <Card
             style={{
               borderRadius: "10px",
-              paddingBottom: "20px"
+              paddingBottom: "20px",
+              margin: "5%"
             }}
           >
             <div style={Banner} />
@@ -132,44 +133,8 @@ const Home = () => {
           <Card
             style={{
               borderRadius: "10px",
-              paddingBottom: "20px"
-            }}
-          >
-            <div style={Banner} />
-            <Flex justifyCenter>
-              <Img
-                rounded
-                style={Image}
-                src={
-                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-                }
-                loader={
-                  <img
-                    alt=" member "
-                    style={Image}
-                    src={require("../../images/developer.png")}
-                  />
-                }
-                unloader={<h1> NOT LOADED </h1>}
-              />
-            </Flex>
-
-            <Name>
-              Anybody A. Anybody <br /> <Position> Engineering Lead </Position>
-            </Name>
-
-            <Flex justifyCenter>
-              <Icon name="facebook" size="big" color="blue" />
-              <Icon name="twitter" size="big" color="blue" />
-              <Icon name="instagram" size="big" color="red" />
-              <Icon name="github" size="big" color="black" />
-            </Flex>
-          </Card>
-
-          <Card
-            style={{
-              borderRadius: "10px",
-              paddingBottom: "20px"
+              paddingBottom: "20px",
+              margin: "5%"
             }}
           >
             <div style={Banner} />
@@ -199,13 +164,14 @@ const Home = () => {
               <Icon name="facebook" size="big" color="blue" />
               <Icon name="twitter" size="big" color="blue" />
               <Icon name="instagram" size="big" color="red" />
+              <Icon name="linkedin" size="big" color="blue" />
             </Flex>
           </Card>
-
           <Card
             style={{
               borderRadius: "10px",
-              paddingBottom: "20px"
+              paddingBottom: "20px",
+              margin: "5%"
             }}
           >
             <div style={Banner} />
@@ -235,6 +201,45 @@ const Home = () => {
               <Icon name="facebook" size="big" color="blue" />
               <Icon name="twitter" size="big" color="blue" />
               <Icon name="instagram" size="big" color="red" />
+              <Icon name="linkedin" size="big" color="blue" />
+            </Flex>
+          </Card>
+
+          <Card
+            style={{
+              borderRadius: "10px",
+              paddingBottom: "20px",
+              margin: "5%"
+            }}
+          >
+            <div style={Banner} />
+            <Flex justifyCenter>
+              <Img
+                rounded
+                style={Image}
+                src={
+                  "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
+                }
+                loader={
+                  <img
+                    alt=" member "
+                    style={Image}
+                    src={require("../../images/developer.png")}
+                  />
+                }
+                unloader={<h1> NOT LOADED </h1>}
+              />
+            </Flex>
+
+            <Name>
+              Anybody A. Anybody <br /> <Position> Legal head </Position>
+            </Name>
+
+            <Flex justifyCenter>
+              <Icon name="facebook" size="big" color="blue" />
+              <Icon name="twitter" size="big" color="blue" />
+              <Icon name="instagram" size="big" color="red" />
+              <Icon name="linkedin" size="big" color="blue" />
             </Flex>
           </Card>
         </Gallery>

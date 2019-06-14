@@ -19,13 +19,13 @@ text-align :  center
 padding-top : 2% 
 padding-bottom : 2% 
 `;
-
+// 18379a
 const Contain = styled.div`
   text-align: center;
 `;
-
+// 2B44FF
 const Card = styled.div`
-  background: #18379a;
+  background: #2b44ff;
 `;
 
 export default function home() {
