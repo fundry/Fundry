@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "apollo-boost": "^0.4.2",
+    "babel-loader": "^8.0.6",
     "dotenv-cli": "^2.0.0",
     "graphql": "^14.3.1",
     "husky": "^2.3.0",
