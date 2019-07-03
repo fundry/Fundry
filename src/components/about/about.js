@@ -8,6 +8,7 @@ import { ReactComponent as Bottom } from "./svg/bottom.svg";
 import Flex from "styled-flex-component";
 import useWindowWidth from "../hook_style";
 import posed from "react-pose";
+import Build from "../build/build";
 
 const Div = styled.div`
   width: 100%
@@ -22,13 +23,15 @@ const Contain = styled.div`
 `;
 
 const Head = styled.h3`
-text-align : right
 color : #022b69
 font-weight: bold 
+text-align: center 
+font-family: comic sans ms
 `;
 
 const Text = styled.p`
-  padding-top: 5%;
+padding-top: 2% 
+text-align  : center
 `;
 
 const Box = posed.div({
@@ -76,31 +79,15 @@ const About = () => {
 
   return (
     <Div>
-      {hooks >= 700 ? (
+      {hooks >= 600 ? (
         <Contain>
-          <Flex>
-            <Flex justifyCenter>
-              <div style={{ marginLeft: "20%" }}>
-                <Bulb
-                  style={{ marginLeft: "4vh", height: "50vh", width: "100%" }}
-                />
-              </div>
-            </Flex>
-
-            <div
-              style={{
-                marginTop: "17vh",
-                marginLeft: "15%",
-                marginRight: "10%"
-              }}
-            >
-              <Head> Turning Small Ideas Into Products </Head>
+          <Flex justifyCenter>
+            <div>
+              <Head> Turning Rough Ideas Into Products </Head>
 
               <Text>
                 Fundry is a program developed to hm4bjfeb j4hgfjbhgek
-                rh4kgegb,ekkgt jkvbwhjwgkkfjk ydkv wdkwyd gwdw nbhkeb 3f3ffe
-                dwdwdw dwdx w222e e2rr a 22e 2 1e2cs 4r4ede 4t5rvdwd 3rd33
-                4t4efed 3r3 e23e3r e2e2
+                rh4kgegb,ekkgt jkvbwhjwgkkfjk ydkv wdkwyd gwdw nbhkeb .
               </Text>
 
               <div style={{ float: "right" }}>
@@ -108,9 +95,20 @@ const About = () => {
               </div>
             </div>
           </Flex>
-          <div style={{ marginLeft: "45%", textAlign: "right " }}>
+          <br /> <br />
+          <br /> <br />
+          <Flex>
+            <div style={{}}>
+              <h3>
+                <b>Structure </b> <br /> Your Idea{" "}
+              </h3>
+              <p>
+                Meeet with our engineers and structure your idea bla bla bla{" "}
+              </p>
+            </div>
+
             <Bottom />
-          </div>
+          </Flex>
         </Contain>
       ) : (
         <Contain>
@@ -136,9 +134,10 @@ const About = () => {
       )}
 
       <br />
-      <Uses />
       <div>
+        <Uses />
         <Operation />
+        <Build />
       </div>
     </Div>
   );

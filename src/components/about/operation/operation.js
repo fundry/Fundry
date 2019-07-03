@@ -45,17 +45,6 @@ const Operation = () => {
 
   return (
     <Div>
-      <Header> How Does It Work ? </Header>
-      <p
-        style={{
-          float: "right",
-          fontSize: "1.3em",
-          paddingRight: "5%",
-          color: "#fff"
-        }}
-      >
-        Development Phase
-      </p>
       {hooks >= 720 ? <Desktop /> : <Mobile />}
       <Link to="./apply">
         <div

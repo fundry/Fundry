@@ -3,33 +3,24 @@ import React from "react";
 import Img from "react-image";
 import styled from "styled-components";
 import Flex from "styled-flex-component";
-import { media } from "../media_style";
 import { AuthConsumer } from "../auth/protected/AuthContext";
 import useWindowWidth from "../hook_style";
-import { Icon } from "semantic-ui-react";
-import { Feather } from "react-web-vector-icons";
 
 const Header = () => {
   const Div = styled.div`
-      height: 9vh
+      padding: 1em
       background : #444444
-      padding-top: 1%;
+      padding-top: 1%; 
     `;
   const A = styled.a`
-    ${media.tablet`
-			font-size: 1.3em
-		`}
-    ${media.phone`
-			font-size: 1em
-		`}
-			color: #0E2F5A;
+    color: #0e2f5a;
     text-decoration: none;
-    font-size: 20px;
-    height: 10%;
+    font-size: 1.7em;
+    font-family: comic sans ms;
   `;
 
   const Title = styled.a`
-	font-size : 1.5em
+	font-size : 1.2em
 	color  : white
 `;
 
@@ -39,7 +30,7 @@ const Header = () => {
   `;
 
   const Button = styled.button`
-    background: #0e2f5a;
+    background: #0e2f5a 
     text-align: right;
     border-radius: 7px;
     height: 40px;
@@ -47,6 +38,22 @@ const Header = () => {
     color: #fff;
     margin: 0 1em;
     padding: 0.25em 2em;
+    font-size: 1em;
+    &:hover {
+      color: #0e2f5a;
+      background: #fff;
+    }
+  `;
+
+  const Apply = styled.button`
+    background: #f9db77;
+    text-align: right;
+    border-radius: 5px;
+    height: 35px
+    border: 1px solid #0e2f5a;
+    color: #0e2f5a;
+    margin: 0 1em;
+    padding: 0.25em 1em;
     font-size: 1em;
     &:hover {
       color: #0e2f5a;
@@ -63,23 +70,15 @@ const Header = () => {
   return (
     <AuthConsumer>
       {({ isAuth, login, logout }) => (
-        <div>
+        <div style={{ boxShadow: "0px 2px 5px #05156b" }}>
           {hooks >= 720 ? (
             <Div style={{ paddingTop: "2%" }}>
-              {" "}
               <nav>
                 <Flex justifyBetween>
                   <NameDiv>
-                    <Flex>
-                      <Image
-                        src={
-                          "https://res.cloudinary.com/dkfptto8m/image/upload/v1558070244/Mongodb%20hackathon%20project/thunder.png"
-                        }
-                      />
-                      <Link href="/">
-                        <A>Fundry</A>
-                      </Link>
-                    </Flex>
+                    <Link href="/">
+                      <A>Fundry</A>
+                    </Link>
                   </NameDiv>
 
                   {isAuth ? (
@@ -89,29 +88,29 @@ const Header = () => {
                       <Button> Profile </Button>
                     </Flex>
                   ) : (
-                    <Flex>
-                      <div style={{ paddingRight: "30px" }}>
-                        <Link to="/apply">
-                          <Title> Apply </Title>
-                        </Link>
+                    <Flex justifyBetween>
+                      <div style={{ textAlign: "center" }}>
+                        <Flex>
+                          <div style={{ paddingRight: "30px" }}>
+                            <Link to="/apply">
+                              <Title> FAQ </Title>
+                            </Link>
+                          </div>
+                          <div style={{ paddingRight: "30px" }}>
+                            <Link to="/apply">
+                              <Title> Team </Title>
+                            </Link>
+                          </div>
+                          <div style={{ paddingRight: "30px" }}>
+                            <Link to="/apply">
+                              <Title> Apply </Title>
+                            </Link>
+                          </div>
+                        </Flex>
                       </div>
-                      <div style={{ paddingRight: "30px" }}>
-                        <Link to="/apply">
-                          <Title> FAQ </Title>
-                        </Link>
-                      </div>
-                      <div style={{ paddingRight: "30px" }}>
-                        <Link to="/apply">
-                          <Title> Team </Title>
-                        </Link>
-                      </div>
-                      <div style={{ paddingRight: "30px" }}>
-                        <Link to="/apply">
-                          <Title> Apply </Title>
-                        </Link>
-                      </div>
+
                       <Link to="/login">
-                        <Button onClick={login}> Login </Button>
+                        <Apply onClick={login}> Start Application </Apply>
                       </Link>
                     </Flex>
                   )}
@@ -120,7 +119,7 @@ const Header = () => {
             </Div>
           ) : (
             <Div
-              style={{ height: "5.5vh", paddingTop: "2%", paddingRight: "3%" }}
+              style={{ padding: "1em", paddingTop: "2%", paddingRight: "3%" }}
             >
               <nav>
                 <Flex justifyBetween>
@@ -137,11 +136,7 @@ const Header = () => {
                     </Flex>
                   </NameDiv>
 
-                  {isAuth ? (
-                    <Feather name="menu" color="#fff" size={40} style={{}} />
-                  ) : (
-                    <Feather name="menu" color="#fff" size={40} style={{}} />
-                  )}
+                  {isAuth ? <Button> Menu </Button> : <Button> Menus </Button>}
                 </Flex>
               </nav>
             </Div>

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Flex from "styled-flex-component";
-import { Grid } from "semantic-ui-react";
 import { ReactComponent as Rocket } from "./svg/rocket.svg";
 import { ReactComponent as Legal } from "./svg/legal.svg";
 import { ReactComponent as Develop } from "./svg/develop.svg";
@@ -42,59 +41,34 @@ export default function home() {
         }}
       >
         <Head> Build , Scale and Develop your rough Idea. </Head>
-        <Grid>
-          <Grid.Row columns="3">
-            <Grid.Column>
-              <Contain>
-                <Rocket style={{ maxHeight: "20vh", Bottom: 0 }} />
-                <Flex column>
-                  <Text>
-                    <strong> Review </strong>
-                  </Text>
+        <Flex justifyAround>
+          <Contain>
+            <Rocket style={{ maxHeight: "20vh", Bottom: 0 }} />
+            <div>
+              <Text>
+                <strong> Review </strong>
+              </Text>
+            </div>
+          </Contain>
 
-                  <p>
-                    {" "}
-                    Get an immediate review on your idea from our team members{" "}
-                  </p>
-                </Flex>
-              </Contain>
-            </Grid.Column>
-            <Grid.Column>
-              <Contain>
-                <Rocket style={{ maxHeight: "20vh", Bottom: 0 }} />
-                <Flex column>
-                  <Text>
-                    <strong> Refactor </strong>
-                  </Text>
+          <Contain>
+            <Rocket style={{ maxHeight: "20vh", Bottom: 0 }} />
+            <div style={{ width: "20%" }}>
+              <Text>
+                <strong> Refactor </strong>
+              </Text>
+            </div>
+          </Contain>
 
-                  <p>
-                    {" "}
-                    Recieve ways to restructure and optimize your idea based on
-                    previous review{" "}
-                  </p>
-                </Flex>
-              </Contain>
-            </Grid.Column>
-            <Grid.Column>
-              <Contain>
-                <Legal style={{ maxHeight: "15vh", Bottom: 0 }} />
-                <Flex column>
-                  <Text>
-                    <strong> Build </strong>
-                  </Text>
-
-                  <p>
-                    {" "}
-                    Begin the actual development and implementation of your
-                    idea.{" "}
-                  </p>
-                </Flex>
-              </Contain>
-            </Grid.Column>{" "}
-            <br /> <br /> <br />
-          </Grid.Row>
-        </Grid>
-
+          <Contain>
+            <Legal style={{ maxHeight: "15vh", Bottom: 0 }} />
+            <div style={{ width: "20%" }}>
+              <Text>
+                <strong> Build </strong>
+              </Text>
+            </div>
+          </Contain>
+        </Flex>{" "}
         <br />
         <Access />
       </Card>
