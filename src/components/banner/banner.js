@@ -98,29 +98,32 @@ const Home = () => {
           </Div>
         </div>
       ) : (
-        <div>
-          <Div>
-            <div style={{ textAlign: "center" }}>
-              <Image />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <Quote />
-              <Flex justifyCenter>
-                <Sidebar initialPose="exit" pose="enter">
-                  <Head>
-                    <SplitText charPoses={charPoses}>
-                      Providing a launchpad to build for the next Billion Users.
-                    </SplitText>
-                  </Head>
-                </Sidebar>
-              </Flex>
-              <Flex justifyCenter>
-                <Button style={{}}> Get Started </Button>
-              </Flex>
-            </div>{" "}
-            <br /> <br />
-          </Div>
-        </div>
+        <Div>
+          {" "}
+          <br />
+          <div style={{ textAlign: "center" }}>
+            <Image style={{ maxWidth: "75%" }} />
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <Flex justifyCenter>
+              {" "}
+              <Quote />{" "}
+            </Flex>
+            <Flex justifyCenter>
+              <Sidebar initialPose="exit" pose="enter">
+                <Head>
+                  <SplitText charPoses={charPoses}>
+                    Providing a launchpad to build for the next Billion Users.
+                  </SplitText>
+                </Head>
+              </Sidebar>
+            </Flex>
+            <Flex justifyCenter>
+              <Button style={{}}> Get Started </Button>
+            </Flex>
+          </div>
+          <br /> <br />
+        </Div>
       )}
 
       <Sponsors />
