@@ -85,7 +85,7 @@ const About = () => {
             <div>
               <Head> Turning Rough Ideas Into Products </Head>
 
-              <Text>
+              <Text style={{ width: "70%" }}>
                 Fundry is a program developed to hm4bjfeb j4hgfjbhgek
                 rh4kgegb,ekkgt jkvbwhjwgkkfjk ydkv wdkwyd gwdw nbhkeb .
               </Text>

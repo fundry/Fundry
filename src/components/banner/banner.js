@@ -37,12 +37,10 @@ const Button = styled(Box)`
   background: #0748a8;
   text-align: center;
   border-radius: 5px;
-  height: 50px;
-  padding-top: 5px;
   border: 0.5px solid palevioletred;
   color: white;
   margin: 0 1em;
-  padding: 0.25em 2em;
+  padding: 0.1em 2em;
   font-size: 0.95em;
 `;
 
@@ -50,7 +48,7 @@ const Head = styled.p`
   color : #0e2f5a
   text-align: center
   font-weight: bold
-  font-size: 1.5em
+  font-size: 1.3em
   padding-bottom: 3%
   width : 70%
 `;
@@ -109,12 +107,12 @@ const Home = () => {
               <Quote />
               <Flex justifyCenter>
                 <Sidebar initialPose="exit" pose="enter">
-                  <Head style={{ marginLeft: "17.7%" }}>
+                  <Head>
                     <SplitText charPoses={charPoses}>
                       Providing a launchpad to build for the next Billion Users.
                     </SplitText>
                   </Head>
-                </Sidebar>{" "}
+                </Sidebar>
               </Flex>
               <Flex justifyCenter>
                 <Button style={{}}> Get Started </Button>
