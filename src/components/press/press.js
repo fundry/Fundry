@@ -8,10 +8,6 @@ const Press = () => {
     font-weight: bold;
   `;
 
-  const Subtitle = styled.p`
-    font-size: 1.2em;
-  `;
-
   const Title = styled.h4`
     font-weight: bold;
     text-align: center;
@@ -46,7 +42,6 @@ const Press = () => {
     <div style={{ paddingTop: "3%", marginLeft: "3%", marginRight: "3%" }}>
       <div style={{ textAlign: "center" }}>
         <Head> Press Releases </Head>
-        <Subtitle> Recent blog posts from the media team.</Subtitle>
         <hr />
       </div>
 

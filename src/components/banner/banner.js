@@ -5,7 +5,7 @@ import SplitText from "react-pose-text";
 import Quote from "./text/quote";
 import Flex from "styled-flex-component";
 import Header from "./header";
-import Sponsors from "./sponsors";
+import Sponsors from ".././support/sponsors";
 import { ReactComponent as Image } from "./baner.svg";
 import useWindowWidth from "../hook_style";
 
@@ -19,7 +19,7 @@ const Box = posed.div({
   hoverable: true,
   pressable: true,
   init: {
-    paddingTop: "15px",
+    paddingTop: "5px",
     scale: 1,
     boxShadow: "0px 0px 0px rgba(0,0,0,0)"
   },
@@ -36,11 +36,11 @@ const Box = posed.div({
 const Button = styled(Box)`
   background: #0748a8;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 0.5px solid palevioletred;
   color: white;
   margin: 0 1em;
-  padding: 0.1em 2em;
+  padding: 0.7em 2em;
   font-size: 0.95em;
 `;
 

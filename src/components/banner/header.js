@@ -15,7 +15,7 @@ const Header = () => {
   const A = styled.a`
     color: #0e2f5a;
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 1.85em;
     font-family: comic sans ms;
   `;
 
@@ -89,8 +89,18 @@ const Header = () => {
                     </Flex>
                   ) : (
                     <Flex justifyBetween>
-                      <div style={{ textAlign: "center" }}>
+                      <div>
                         <Flex>
+                          <div style={{ paddingRight: "30px" }}>
+                            <Link to="/apply">
+                              <Title> Engineering </Title>
+                            </Link>
+                          </div>
+                          <div style={{ paddingRight: "30px" }}>
+                            <Link to="/apply">
+                              <Title> Blog </Title>
+                            </Link>
+                          </div>
                           <div style={{ paddingRight: "30px" }}>
                             <Link to="/apply">
                               <Title> FAQ </Title>
@@ -99,11 +109,6 @@ const Header = () => {
                           <div style={{ paddingRight: "30px" }}>
                             <Link to="/apply">
                               <Title> Team </Title>
-                            </Link>
-                          </div>
-                          <div style={{ paddingRight: "30px" }}>
-                            <Link to="/apply">
-                              <Title> Apply </Title>
                             </Link>
                           </div>
                         </Flex>

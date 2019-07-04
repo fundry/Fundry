@@ -5,8 +5,6 @@ import { ReactComponent as Rocket } from "./svg/rocket.svg";
 import { ReactComponent as Legal } from "./svg/legal.svg";
 import { ReactComponent as Develop } from "./svg/develop.svg";
 
-import Access from "./access";
-
 const Text = styled.p`
   text-align :  center
   padding-top : 5% 
@@ -24,7 +22,7 @@ const Contain = styled.div`
 `;
 // 2B44FF
 const Card = styled.div`
-  background: #2b44ff;
+  background: linear-gradient(to bottom, #2b44ff, #b59acd);
 `;
 
 export default function home() {
@@ -40,7 +38,7 @@ export default function home() {
           color: "#FFF"
         }}
       >
-        <Head> Build , Scale and Develop your rough Idea. </Head>
+        <Head> Define , Build and Fund your rough Idea. </Head>
         <Flex justifyAround>
           <Contain>
             <Rocket style={{ maxHeight: "20vh", Bottom: 0 }} />
@@ -61,7 +59,7 @@ export default function home() {
           </Contain>
 
           <Contain>
-            <Legal style={{ maxHeight: "15vh", Bottom: 0 }} />
+            <Legal style={{ maxHeight: "20vh", Bottom: 0 }} />
             <div style={{ width: "20%" }}>
               <Text>
                 <strong> Build </strong>
@@ -70,7 +68,6 @@ export default function home() {
           </Contain>
         </Flex>{" "}
         <br />
-        <Access />
       </Card>
     </Flex>
   );

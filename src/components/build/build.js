@@ -2,6 +2,7 @@ import React from "react";
 import Flex from "styled-flex-component";
 import styled from "styled-components";
 import Img from "react-image";
+import { ReactComponent as Tools } from "./tools.svg";
 
 const Build = () => {
   const Image = {
@@ -12,41 +13,36 @@ const Build = () => {
     textAlign: "center"
   };
 
-  return (
-    <div
-      style={{
-        padding: "1em",
-        paddingTop: "5%",
-        backgroundColor: "#f2f5ff",
-        color: "#0e2f5a "
-      }}
-    >
-      <Flex justifyBetween>
-        <div style={{}}>
-          <h3>
-            <b>Leverage </b> <br /> Our Expertise
-          </h3>
-          <p> Build whatever you want with our engineers bla bla </p>
-        </div>
+  const Div = styled.div`
+    background: linear-gradient(to top, #2b44ff, #b59acd);
+  `;
 
-        <div>
-          <Img
-            style={Image}
-            src={
-              "https://res.cloudinary.com/dkfptto8m/image/upload/v1559072247/my_avatar.png"
-            }
-            loader={
-              <img
-                alt=" member "
-                style={Image}
-                src={require("../../images/developer.png")}
-              />
-            }
-            unloader={<h1> NOT LOADED </h1>}
-          />
-        </div>
-      </Flex>
-    </div>
+  return (
+    <Div>
+      <div
+        style={{
+          padding: "1em",
+          paddingTop: "5%",
+          color: "#0e2f5a "
+        }}
+      >
+        <Flex justifyBetween>
+          <div style={{ paddingLeft: "2em", paddingTop: "5em" }}>
+            <h2 style={{ color: "#fff" }}>
+              <b>Funded </b> <br /> Development Process
+            </h2>
+            <p style={{ color: "#fff" }}>
+              {" "}
+              Build whatever you want with our engineers bla bla{" "}
+            </p>
+          </div>
+
+          <div>
+            <Tools style={{ marginRight: "2em" }} />
+          </div>
+        </Flex>
+      </div>
+    </Div>
   );
 };
 export default Build;

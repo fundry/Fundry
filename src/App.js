@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner, Faq, Recent, Press, Footer, Legal, About } from "./components";
+import { Banner, Faq, Press, Footer, Legal, About } from "./components";
 import { ApolloProvider } from "react-apollo";
 import Client from "./data/config";
 
@@ -12,7 +12,6 @@ function App() {
         <Legal /> <br /> <br />
         <Press />
         <br /> <br />
-        <Recent />
         <Faq />
         <Footer />
       </div>
