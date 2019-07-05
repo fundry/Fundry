@@ -18,36 +18,51 @@ export default function home() {
     }
   });
 
-  const Button = styled.a`
+  const Image = styled.a`
     &:hover {
       cursor: pointer;
     }
   `;
 
+  const Button = styled(Hover)`
+    background: #0748a8;
+    text-align: center;
+    border-radius: 3px;
+    border: 0.5px solid palevioletred;
+    color: white;
+    margin: 0 1em;
+    padding: 0.7em 2em;
+    font-size: 0.95em;
+  `;
+
   return (
     <div style={{ textAlign: "center" }}>
+      <h3> Join the increasing number </h3>
       <Flex justifyAround>
         <div>
           <Hover>
-            <Button>
+            <Image>
               <Travoi style={{ maxWidth: "45%" }} />
-            </Button>
+            </Image>
           </Hover>
         </div>
         <div>
           <Hover>
-            <Button>
+            <Image>
               <Travoi style={{ maxWidth: "45%" }} />
-            </Button>
+            </Image>
           </Hover>
         </div>
         <div>
           <Hover>
-            <Button>
+            <Image>
               <Travoi style={{ maxWidth: "45%" }} />
-            </Button>
-          </Hover>{" "}
+            </Image>
+          </Hover>
         </div>
+      </Flex>
+      <Flex justifyCenter>
+        <Button> Explore </Button>
       </Flex>
     </div>
   );

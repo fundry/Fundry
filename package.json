@@ -9,6 +9,8 @@
     "graphql": "^14.3.1",
     "husky": "^2.3.0",
     "jsdoc": "^3.6.2",
+    "mobx": "^5.11.0",
+    "mobx-react": "^6.1.1",
     "react": "^16.8.6",
     "react-apollo": "^2.5.6",
     "react-background-image": "^1.2.0",

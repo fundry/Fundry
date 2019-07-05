@@ -52,9 +52,6 @@ const About = () => {
               </Text>
             </div>
           </Flex>
-          <div>
-            <Releases />
-          </div>
           <br /> <br /> <br />
           <Flex>
             <div style={{ paddingTop: "5%" }}>
@@ -68,6 +65,9 @@ const About = () => {
 
             <Bottom style={{ maxWidth: "50%" }} />
           </Flex>
+          <div>
+            <Releases />
+          </div>
         </Contain>
       ) : (
         <Contain>
