@@ -11,7 +11,7 @@ const Text = styled.p`
   font-size : 1.3em
 `;
 
-const Head = styled.h4`
+const Head = styled.h3`
 text-align :  center
 padding-top : 2% 
 padding-bottom : 2% 
@@ -22,7 +22,7 @@ const Contain = styled.div`
 `;
 // 2B44FF
 const Card = styled.div`
-  background: linear-gradient(to bottom, #2b44ff, #b59acd);
+  background: linear-gradient(to bottom, #2b44ff, #0091ff);
 `;
 
 export default function home() {
@@ -38,6 +38,11 @@ export default function home() {
           color: "#FFF"
         }}
       >
+        <img
+          alt="whave"
+          src={require("../../images/WhiteWave.png")}
+          style={{ width: "100%" }}
+        />
         <Head> Define , Build and Fund your rough Idea. </Head>
         <Flex justifyAround>
           <Contain>

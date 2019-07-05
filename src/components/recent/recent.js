@@ -27,16 +27,15 @@ export default function home() {
   const Button = styled(Hover)`
     background: #0748a8;
     text-align: center;
-    border-radius: 3px;
-    border: 0.5px solid palevioletred;
+    border-radius: 5px;
     color: white;
     margin: 0 1em;
-    padding: 0.7em 2em;
+    padding: 0.5em 3em;
     font-size: 0.95em;
   `;
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", paddingTop: "7%" }}>
       <h3> Join the increasing number </h3>
       <Flex justifyAround>
         <div>
@@ -62,7 +61,7 @@ export default function home() {
         </div>
       </Flex>
       <Flex justifyCenter>
-        <Button> Explore </Button>
+        <Button style={{ boxShadow: "0px 3px 7px #05156b" }}> Explore </Button>
       </Flex>
     </div>
   );

@@ -11,7 +11,7 @@ import Mobile from "./mobile";
 
 const Div = styled.div`
   width: 100%
-  background: #b59acd
+  background: transparent
   padding-top: 3%
   padding-bottom: 5%
 `;

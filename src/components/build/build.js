@@ -1,7 +1,6 @@
 import React from "react";
 import Flex from "styled-flex-component";
 import styled from "styled-components";
-import Img from "react-image";
 import { ReactComponent as Tools } from "./tools.svg";
 
 const Build = () => {
@@ -14,7 +13,7 @@ const Build = () => {
   };
 
   const Div = styled.div`
-    background: linear-gradient(to top, #2b44ff, #b59acd);
+    background: linear-gradient(to top, #2b44ff, #0091ff);
   `;
 
   return (
@@ -32,7 +31,6 @@ const Build = () => {
               <b>Funded </b> <br /> Development Process
             </h2>
             <p style={{ color: "#fff" }}>
-              {" "}
               Build whatever you want with our engineers bla bla{" "}
             </p>
           </div>

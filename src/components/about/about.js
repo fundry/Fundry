@@ -53,8 +53,8 @@ const About = () => {
             </div>
           </Flex>
           <br /> <br /> <br />
-          <Flex>
-            <div style={{ paddingTop: "5%" }}>
+          <Flex justifyCenter>
+            <div style={{ paddingTop: "5%", padding: "2em" }}>
               <h3>
                 <b> Define </b> <br /> Your Roadmap !{" "}
               </h3>
@@ -92,10 +92,10 @@ const About = () => {
         </Contain>
       )}
 
-      <br />
       <div>
+        <img alt="whave" src={require("../../images/WhiteWave.png")} />
         <Uses />
-        <Build />
+        <Build /> <Support /> <br />
         <Operation />
       </div>
     </Div>
