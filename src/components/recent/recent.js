@@ -36,7 +36,7 @@ export default function home() {
 
   return (
     <div style={{ textAlign: "center", paddingTop: "7%" }}>
-      <h3> Join the increasing number </h3>
+      <h4> Join the increasing number </h4>
       <Flex justifyAround>
         <div>
           <Hover>

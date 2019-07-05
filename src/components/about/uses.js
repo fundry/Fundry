@@ -38,11 +38,6 @@ export default function home() {
           color: "#FFF"
         }}
       >
-        <img
-          alt="whave"
-          src={require("../../images/WhiteWave.png")}
-          style={{ width: "100%" }}
-        />
         <Head> Define , Build and Fund your rough Idea. </Head>
         <Flex justifyAround>
           <Contain>

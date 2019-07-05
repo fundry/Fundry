@@ -91,9 +91,8 @@ const About = () => {
           </Grid>
         </Contain>
       )}
-
+      <br />
       <div>
-        <img alt="whave" src={require("../../images/WhiteWave.png")} />
         <Uses />
         <Build /> <Support /> <br />
         <Operation />
