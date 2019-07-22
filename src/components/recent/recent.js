@@ -24,16 +24,6 @@ export default function home() {
     }
   `;
 
-  const Button = styled(Hover)`
-    background: #0748a8;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    margin: 0 1em;
-    padding: 0.5em 3em;
-    font-size: 0.95em;
-  `;
-
   return (
     <div style={{ textAlign: "center", paddingTop: "7%" }}>
       <h4> Join the increasing number </h4>
@@ -59,9 +49,6 @@ export default function home() {
             </Image>
           </Hover>
         </div>
-      </Flex>
-      <Flex justifyCenter>
-        <Button style={{ boxShadow: "0px 3px 7px #05156b" }}> Explore </Button>
       </Flex>
     </div>
   );

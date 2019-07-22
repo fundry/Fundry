@@ -1,17 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "../banner/header";
+import Footer from "../footer/footer";
 
 const Div = styled.div`
-  width: 100%
+    padding:  1em ,
   background: #f2f5ff
-  height : 20vh
 `;
 
-const Title = styled.p`
-font-weight : bold
-font-size : 1.3em
-text-align : right
-padding-right : 5%
+const Title = styled.h4`
+  padding-right: 5%;
 `;
 
 const Text = styled.h4`
@@ -19,11 +17,31 @@ const Text = styled.h4`
   padding-top : 5% 
 `;
 
-export default function home() {
+const AllTeam = () => {
   return (
-    <Div>
-      <Title> TEAM </Title>
-      <Text> TEAM PAGE ... NOT DONE </Text>
-    </Div>
+    <div>
+      <Header />
+
+      <Div>
+        <div style={{ padding: "1em", textAlign: "left" }}>
+          <Title> Founders and Executives </Title>{" "}
+        </div>
+        <div style={{ padding: "1em", textAlign: "right" }}>
+          <Title> Team Leads </Title>
+        </div>
+        <div style={{ padding: "1em", textAlign: "left" }}>
+          <Title> Engineering Team </Title>
+        </div>
+        <div style={{ padding: "1em", textAlign: "right" }}>
+          <Title> Legal Team </Title>
+        </div>
+        <div style={{ padding: "1em", textAlign: "left" }}>
+          <Title> Human Resource Team </Title>
+        </div>
+      </Div>
+
+      <Footer />
+    </div>
   );
-}
+};
+export default AllTeam;

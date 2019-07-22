@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Grid, Icon } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import Flex from "styled-flex-component";
+import useWindowWidth from "../hook_style";
 
 const Press = () => {
   const Head = styled.h2`
@@ -38,6 +39,8 @@ const Press = () => {
     }
 `;
 
+  const hook = useWindowWidth();
+
   return (
     <div style={{ paddingTop: "3%", marginLeft: "3%", marginRight: "3%" }}>
       <div style={{ textAlign: "center" }}>
@@ -45,121 +48,183 @@ const Press = () => {
         <hr />
       </div>
 
-      <Flex justifyCenter>
-        <Grid stackable columns={2} style={{ paddingTop: "2%" }}>
-          <Grid.Row>
-            <Grid.Column style={{ paddingBottom: "5%" }}>
-              <div
-                style={{
-                  paddingBottom: "5%",
-                  paddingRight: "7%",
-                  paddingLeft: "7%"
-                }}
-              >
-                <Title> Our First Blog Post </Title>
-                <hr />
+      <div>
+        {hook >= 700 ? (
+          <Flex justifyCenter>
+            <Grid stackable columns={2} style={{ paddingTop: "2%" }}>
+              <Grid.Row>
+                <Grid.Column style={{ paddingBottom: "5%" }}>
+                  <div
+                    style={{
+                      paddingBottom: "5%",
+                      paddingRight: "7%",
+                      paddingLeft: "7%"
+                    }}
+                  >
+                    <Title> Our First Blog Post </Title>
+                    <hr />
 
-                <Summary>
-                  okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
-                  bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
-                  ghnrglkrmgrgli
-                </Summary>
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
 
-                <Summary>
-                  okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
-                  bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
-                  ghnrglkrmgrgli
-                </Summary>
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
 
-                <Flex justifyCenter>
-                  <Button href="/"> Continue Reading </Button>
-                </Flex>
-              </div>
-            </Grid.Column>
+                    <Flex justifyCenter>
+                      <Button href="/"> Continue Reading </Button>
+                    </Flex>
+                  </div>
+                </Grid.Column>
 
-            <Grid.Column style={{ paddingBottom: "5%" }}>
-              <div
-                style={{
-                  paddingBottom: "5%",
-                  paddingRight: "7%",
-                  paddingLeft: "7%"
-                }}
-              >
-                <Title> Our First Blog Post </Title>
-                <hr />
+                <Grid.Column style={{ paddingBottom: "5%" }}>
+                  <div
+                    style={{
+                      paddingBottom: "5%",
+                      paddingRight: "7%",
+                      paddingLeft: "7%"
+                    }}
+                  >
+                    <Title> Our First Blog Post </Title>
+                    <hr />
 
-                <Summary>
-                  okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
-                  bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
-                  ghnrglkrmgrgli
-                </Summary>
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
 
-                <Flex justifyCenter>
-                  <Button href="/"> Continue Reading </Button>
-                </Flex>
-              </div>
-            </Grid.Column>
+                    <Flex justifyCenter>
+                      <Button href="/"> Continue Reading </Button>
+                    </Flex>
+                  </div>
+                </Grid.Column>
 
-            <Grid.Column style={{ paddingBottom: "5%" }}>
-              <div
-                style={{
-                  paddingBottom: "5%",
-                  paddingRight: "7%",
-                  paddingLeft: "7%"
-                }}
-              >
-                <Title> Our First Blog Post </Title>
-                <hr />
+                <Grid.Column style={{ paddingBottom: "5%" }}>
+                  <div
+                    style={{
+                      paddingBottom: "5%",
+                      paddingRight: "7%",
+                      paddingLeft: "7%"
+                    }}
+                  >
+                    <Title> Our First Blog Post </Title>
+                    <hr />
 
-                <Summary>
-                  okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
-                  bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
-                  ghnrglkrmgrgli
-                </Summary>
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
 
-                <Summary>
-                  okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
-                  bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
-                  ghnrglkrmgrgli
-                </Summary>
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
 
-                <Flex justifyCenter>
-                  <Button href="/"> Continue Reading </Button>
-                </Flex>
-              </div>
-            </Grid.Column>
+                    <Flex justifyCenter>
+                      <Button href="/"> Continue Reading </Button>
+                    </Flex>
+                  </div>
+                </Grid.Column>
 
-            <Grid.Column style={{ paddingBottom: "5%" }}>
-              <div
-                style={{
-                  paddingBottom: "5%",
-                  paddingRight: "7%",
-                  paddingLeft: "7%"
-                }}
-              >
-                <Title> Our First Blog Post </Title>
-                <hr />
+                <Grid.Column style={{ paddingBottom: "5%" }}>
+                  <div
+                    style={{
+                      paddingBottom: "5%",
+                      paddingRight: "7%",
+                      paddingLeft: "7%"
+                    }}
+                  >
+                    <Title> Our First Blog Post </Title>
+                    <hr />
 
-                <Summary>
-                  okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
-                  bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
-                  ghnrglkrmgrgli
-                </Summary>
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
 
-                <Summary>
-                  okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
-                  bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
-                  ghnrglkrmgrgli
-                </Summary>
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
 
-                <Flex justifyCenter>
-                  <Button href="/"> Continue Reading </Button>
-                </Flex>
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Flex>
+                    <Flex justifyCenter>
+                      <Button href="/"> Continue Reading </Button>
+                    </Flex>
+                  </div>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Flex>
+        ) : (
+          <Flex justifyCenter>
+            <Grid stackable columns={2} style={{ paddingTop: "2%" }}>
+              <Grid.Row>
+                <Grid.Column style={{ paddingBottom: "5%" }}>
+                  <div
+                    style={{
+                      paddingBottom: "5%",
+                      paddingRight: "7%",
+                      paddingLeft: "7%"
+                    }}
+                  >
+                    <Title> Our First Blog Post </Title>
+                    <hr />
+
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
+
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
+
+                    <Flex justifyCenter>
+                      <Button href="/"> Continue Reading </Button>
+                    </Flex>
+                  </div>
+                </Grid.Column>
+
+                <Grid.Column style={{ paddingBottom: "5%" }}>
+                  <div
+                    style={{
+                      paddingBottom: "5%",
+                      paddingRight: "7%",
+                      paddingLeft: "7%"
+                    }}
+                  >
+                    <Title> Our First Blog Post </Title>
+                    <hr />
+
+                    <Summary>
+                      okm bmndhtd n bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n
+                      bdlth hrtglkrg ghnrglkrmgrgli okm bmndhtd n bdlth hrtglkrg
+                      ghnrglkrmgrgli
+                    </Summary>
+
+                    <Flex justifyCenter>
+                      <Button href="/"> Continue Reading </Button>
+                    </Flex>
+                  </div>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Flex>
+        )}
+      </div>
     </div>
   );
 };

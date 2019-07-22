@@ -44,11 +44,9 @@ const Button = styled(Box)`
   font-size: 0.95em;
 `;
 
-const Head = styled.p`
+const Head = styled.h2`
   color : #0e2f5a
-  text-align: center
-  font-weight: bold
-  font-size: 1.3em
+  text-align: center 
   padding-bottom: 3%
   width : 70%
 `;
@@ -67,12 +65,12 @@ const charPoses = {
 };
 
 const Home = () => {
-  const test = useWindowWidth();
+  const hook_style = useWindowWidth();
 
   return (
-    <>
+    <div>
       <Header />
-      {test >= 750 ? (
+      {hook_style >= 750 ? (
         <div>
           <Div>
             <Flex>
@@ -83,15 +81,13 @@ const Home = () => {
               <div style={{ paddingTop: "2%", textAlign: "center" }}>
                 <Quote />
                 <Sidebar initialPose="exit" pose="enter">
-                  <Head style={{ marginLeft: "15%", fontSize: "1.7em" }}>
+                  <Head style={{ textAlign: "center" }}>
                     <SplitText charPoses={charPoses}>
                       Providing a launchpad to build for the next Billion Users.
                     </SplitText>
                   </Head>
                 </Sidebar>
-                <Flex justifyCenter>
-                  <Button> Get Started </Button>
-                </Flex>
+                <Flex justifyCenter />
                 <br />
               </div>
             </Flex>
@@ -99,35 +95,34 @@ const Home = () => {
         </div>
       ) : (
         <Div>
-          {" "}
           <br />
           <div style={{ textAlign: "center" }}>
             <Image style={{ maxWidth: "75%" }} />
           </div>
           <div style={{ textAlign: "center" }}>
             <Flex justifyCenter>
-              {" "}
-              <Quote />{" "}
+              <Quote />
             </Flex>
-            <Flex justifyCenter>
-              <Sidebar initialPose="exit" pose="enter">
-                <Head>
+            <Sidebar initialPose="exit" pose="enter">
+              <Flex justifyCenter>
+                <Head
+                  style={{
+                    fontSize: "1.7em"
+                  }}
+                >
                   <SplitText charPoses={charPoses}>
                     Providing a launchpad to build for the next Billion Users.
                   </SplitText>
                 </Head>
-              </Sidebar>
-            </Flex>
-            <Flex justifyCenter>
-              <Button style={{}}> Get Started </Button>
-            </Flex>
+              </Flex>
+            </Sidebar>
           </div>
           <br /> <br />
         </Div>
       )}
 
       <Sponsors />
-    </>
+    </div>
   );
 };
 

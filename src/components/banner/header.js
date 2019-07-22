@@ -8,9 +8,8 @@ import useWindowWidth from "../hook_style";
 
 const Header = () => {
   const Div = styled.div`
-      padding: 1em
+      padding: 0.5em
       background : #444444
-      padding-top: 1%; 
     `;
   const A = styled.a`
     color: #0e2f5a;
@@ -70,9 +69,13 @@ const Header = () => {
   return (
     <AuthConsumer>
       {({ isAuth, login, logout }) => (
-        <div style={{ boxShadow: "0px 2px 5px #05156b" }}>
+        <div style={{ boxShadow: "0px 7px 7px grey" }}>
           {hooks >= 720 ? (
-            <Div style={{ paddingTop: "2%" }}>
+            <Div
+              style={{
+                paddingTop: "1%"
+              }}
+            >
               <nav>
                 <Flex justifyBetween>
                   <NameDiv>
@@ -124,7 +127,7 @@ const Header = () => {
             </Div>
           ) : (
             <Div
-              style={{ padding: "1em", paddingTop: "2%", paddingRight: "3%" }}
+              style={{ padding: "0.5em", paddingTop: "1%", paddingRight: "3%" }}
             >
               <nav>
                 <Flex justifyBetween>
@@ -141,7 +144,7 @@ const Header = () => {
                     </Flex>
                   </NameDiv>
 
-                  {isAuth ? <Button> Menu </Button> : <Button> Menus </Button>}
+                  {isAuth ? <Button> Menu </Button> : <Button> Menu </Button>}
                 </Flex>
               </nav>
             </Div>

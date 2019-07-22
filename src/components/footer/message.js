@@ -63,6 +63,7 @@ export default class reset extends Component {
         <div>
           <Grid stackable columns="equal">
             <Grid.Column>
+              <br />
               <Feeds>
                 <Header style={{ textAlign: "center", fontWeight: "bold" }}>
                   {"  Let's get in touch."}
@@ -142,6 +143,8 @@ export default class reset extends Component {
                   </Button>
                 </Flex>
               </form>
+              <br />
+              <br />
             </Grid.Column>
           </Grid>
         </div>

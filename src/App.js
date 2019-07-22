@@ -13,7 +13,7 @@ function App() {
         <Press />
         <br /> <br />
         <Faq />
-        <Footer />
+        <Footer showFeedback={true} />
       </div>
     </ApolloProvider>
   );
