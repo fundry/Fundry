@@ -24,32 +24,43 @@ export default function home() {
     }
   `;
 
+  const Head = styled.h3`
+    text-align : right
+    padding-right : 25px
+  `;
+
+  const IconBody = styled.div`
+    text-align: center;
+  `;
+
   return (
-    <div style={{ textAlign: "center", paddingTop: "7%" }}>
-      <h4> Join the increasing number </h4>
-      <Flex justifyAround>
-        <div>
-          <Hover>
-            <Image>
-              <Travoi style={{ maxWidth: "45%" }} />
-            </Image>
-          </Hover>
-        </div>
-        <div>
-          <Hover>
-            <Image>
-              <Travoi style={{ maxWidth: "45%" }} />
-            </Image>
-          </Hover>
-        </div>
-        <div>
-          <Hover>
-            <Image>
-              <Travoi style={{ maxWidth: "45%" }} />
-            </Image>
-          </Hover>
-        </div>
-      </Flex>
+    <div style={{ paddingTop: "3em", paddingRight: "20px" }}>
+      <Head> Opensource Products </Head>
+      <IconBody>
+        <Flex justifyAround>
+          <div>
+            <Hover>
+              <Image>
+                <Travoi style={{ maxWidth: "45%" }} />
+              </Image>
+            </Hover>
+          </div>
+          <div>
+            <Hover>
+              <Image>
+                <Travoi style={{ maxWidth: "45%" }} />
+              </Image>
+            </Hover>
+          </div>
+          <div>
+            <Hover>
+              <Image>
+                <Travoi style={{ maxWidth: "45%" }} />
+              </Image>
+            </Hover>
+          </div>
+        </Flex>
+      </IconBody>
     </div>
   );
 }
