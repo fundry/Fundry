@@ -9,7 +9,8 @@ import {
   Profile,
   Signup,
   Form,
-  Protected
+  Protected,
+  allFaq
 } from "./components/index";
 import * as serviceWorker from "./serviceWorker";
 import { Router, Route, Switch } from "react-router";
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/reset" component={Reset} />
+        <Route path="/faq" component={allFaq} />
         <Protected path="/profile" component={Profile} />
       </Switch>
     </AuthProvider>

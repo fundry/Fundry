@@ -4,6 +4,7 @@ export { default as Legal } from "./team/team";
 export { default as Team } from "./team/allTeam";
 export { default as About } from "./about/about";
 export { default as Faq } from "./FAQ/faq";
+export { default as allFaq } from "./FAQ/allFaq";
 export { default as Recent } from "./recent/recent";
 export { default as Application } from "./application/application";
 export { default as Profile } from "./user/profile";

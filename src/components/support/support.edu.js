@@ -1,6 +1,7 @@
 import React from "react";
 import Flex from "styled-flex-component";
 import styled from "styled-components";
+import {} from "react-bootstrap";
 
 const Build = () => {
   const Div = styled.div`
@@ -21,7 +22,7 @@ const Build = () => {
           style={{
             paddingLeft: "2em",
             textAlign: "center",
-            paddingTop: "5em"
+            paddingTop: "2em"
           }}
         >
           <Flex justifyCenter>
@@ -37,9 +38,7 @@ const Build = () => {
         </div>
 
         <Flex justifyBetween>
-          <div>
-            <h1> a</h1>
-          </div>
+          <div />
         </Flex>
       </div>
     </Div>

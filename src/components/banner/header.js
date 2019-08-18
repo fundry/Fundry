@@ -105,12 +105,12 @@ const Header = () => {
                             </Link>
                           </div>
                           <div style={{ paddingRight: "30px" }}>
-                            <Link to="/apply">
+                            <Link to="/faq">
                               <Title> FAQ </Title>
                             </Link>
                           </div>
                           <div style={{ paddingRight: "30px" }}>
-                            <Link to="/apply">
+                            <Link to="/team">
                               <Title> Team </Title>
                             </Link>
                           </div>
