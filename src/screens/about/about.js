@@ -8,7 +8,7 @@ import { ReactComponent as Bottom } from "./svg/bottom.svg";
 import Flex from "styled-flex-component";
 import useWindowWidth from "../../hook_style";
 import Build from "../build/build";
-import Releases from "../recent/recent";
+import Releases from "../product/products";
 import Support from "../support/support.edu";
 
 const Div = styled.div`

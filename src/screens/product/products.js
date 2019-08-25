@@ -1,6 +1,6 @@
 import React from "react";
 import Flex from "styled-flex-component";
-import { Travoi } from "./products/";
+import { Travoi } from "./svg";
 import posed from "react-pose";
 import styled from "styled-components";
 
