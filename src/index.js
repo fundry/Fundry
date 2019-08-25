@@ -11,11 +11,11 @@ import {
   Form,
   Protected,
   allFaq
-} from "./components/index";
+} from "./screens/index";
 import * as serviceWorker from "./serviceWorker";
 import { Router, Route, Switch } from "react-router";
 import { createBrowserHistory } from "history";
-import { AuthProvider } from "./components/auth/protected/AuthContext";
+import { AuthProvider } from "./screens/auth/protected/AuthContext";
 
 const history = createBrowserHistory();
 ReactDOM.render(

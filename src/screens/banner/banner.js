@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import posed from "react-pose";
 import SplitText from "react-pose-text";
-import Quote from "./text/quote";
 import Flex from "styled-flex-component";
+import { observer, inject } from "mobx-react";
+
+import Quote from "./text/quote";
 import Header from "./header";
 import Sponsors from ".././support/sponsors";
 import { ReactComponent as Image } from "./baner.svg";
@@ -64,8 +66,10 @@ const charPoses = {
   enter: { opacity: 1 }
 };
 
-const Home = () => {
+const Home = props => {
   const hook_style = useWindowWidth();
+
+  console.log(props.Store.count);
 
   return (
     <div>
@@ -120,10 +124,11 @@ const Home = () => {
           <br /> <br />
         </Div>
       )}
-
+      {props.Store.count}
+      <button onClick={() => props.Store.increase}>click</button>
       <Sponsors />
     </div>
   );
 };
 
-export default Home;
+export default inject("Store")(observer(Home));
