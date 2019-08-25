@@ -217,6 +217,177 @@ const Blog = () => {
           </Stack>
         </div>
       </Div>
+
+      <Div>
+        <div>
+          <Category style={{ textAlign: "right" }}>
+            {" "}
+            Cloud Engineering{" "}
+          </Category>
+          <hr />
+
+          <Stack>
+            <div>
+              <Card>
+                <Hover>
+                  <Image
+                    alt="cover"
+                    src={require("../../images/test_banner.jpg")}
+                    style={{
+                      width: "20em",
+                      height: "20vh"
+                    }}
+                  />
+                </Hover>
+
+                <Details>
+                  <Flex justifyBetween>
+                    <Hover>
+                      <Flex>
+                        <div style={{ paddingRight: "10px" }}>
+                          <Image
+                            alt="avatar"
+                            src={require("../../images/lawyerF.png")}
+                            fluid
+                            roundedCircle
+                            style={{ height: "40px", width: "40px" }}
+                          />
+                        </div>
+
+                        <div style={{ paddingTop: "10px" }}>
+                          <p> Victory Nwani </p>
+                        </div>
+                      </Flex>
+                    </Hover>
+
+                    <div style={{ paddingTop: "10px" }}>
+                      <p> 14 / 14 / 14 </p>
+                    </div>
+                  </Flex>
+                </Details>
+              </Card>
+              <Title> Machine Learning For Beginners </Title>
+            </div>
+
+            <div>
+              <Card>
+                <Hover>
+                  <Image
+                    alt="cover"
+                    src={require("../../images/test_banner.jpg")}
+                    fluid
+                  />
+                </Hover>
+
+                <Details>
+                  <Flex justifyBetween>
+                    <Hover>
+                      <Flex>
+                        <div style={{ paddingRight: "10px" }}>
+                          <Image
+                            alt="avatar"
+                            src={require("../../images/lawyer.png")}
+                            fluid
+                            roundedCircle
+                            style={{ height: "40px", width: "40px" }}
+                          />
+                        </div>
+
+                        <div style={{ paddingTop: "10px" }}>
+                          <p> Victory Nwani </p>
+                        </div>
+                      </Flex>
+                    </Hover>
+
+                    <div style={{ paddingTop: "10px" }}>
+                      <p> 14 / 14 / 14 </p>
+                    </div>
+                  </Flex>
+                </Details>
+              </Card>
+              <Title> Machine Learning For Beginners </Title>
+            </div>
+
+            <div>
+              <Card>
+                <Hover>
+                  <Image
+                    alt="cover"
+                    src={require("../../images/test_banner.jpg")}
+                    fluid
+                  />
+                </Hover>
+
+                <Details>
+                  <Flex justifyBetween>
+                    <Hover>
+                      <Flex>
+                        <div style={{ paddingRight: "10px" }}>
+                          <Image
+                            alt="avatar"
+                            src={require("../../images/lawyerF.png")}
+                            fluid
+                            roundedCircle
+                            style={{ height: "40px", width: "40px" }}
+                          />
+                        </div>
+
+                        <div style={{ paddingTop: "10px" }}>
+                          <p> Victory Nwani </p>
+                        </div>
+                      </Flex>
+                    </Hover>
+
+                    <div style={{ paddingTop: "10px" }}>
+                      <p> 14 / 14 / 14 </p>
+                    </div>
+                  </Flex>
+                </Details>
+              </Card>
+              <Title> Machine Learning For Beginners </Title>
+            </div>
+
+            <div>
+              <Card>
+                <Hover>
+                  <Image
+                    alt="cover"
+                    src={require("../../images/test_banner.jpg")}
+                    fluid
+                  />
+                </Hover>
+
+                <Details>
+                  <Flex justifyBetween>
+                    <Hover>
+                      <Flex>
+                        <div style={{ paddingRight: "10px" }}>
+                          <Image
+                            alt="avatar"
+                            src={require("../../images/lawyer.png")}
+                            fluid
+                            roundedCircle
+                            style={{ height: "40px", width: "40px" }}
+                          />
+                        </div>
+
+                        <div style={{ paddingTop: "10px" }}>
+                          <p> Victory Nwani </p>
+                        </div>
+                      </Flex>
+                    </Hover>
+
+                    <div style={{ paddingTop: "10px" }}>
+                      <p> 14 / 14 / 14 </p>
+                    </div>
+                  </Flex>
+                </Details>
+              </Card>
+              <Title> Machine Learning For Beginners </Title>
+            </div>
+          </Stack>
+        </div>
+      </Div>
     </div>
   );
 };

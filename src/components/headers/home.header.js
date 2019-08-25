@@ -108,7 +108,7 @@ const Header = props => {
                             <div>
                               <Flex>
                                 <div style={{ paddingRight: "30px" }}>
-                                  <Link to="/apply">
+                                  <Link to="/blog">
                                     <Title> Engineering </Title>
                                   </Link>
                                 </div>
