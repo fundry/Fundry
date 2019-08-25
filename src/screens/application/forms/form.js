@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Flex from "styled-flex-component";
-import Header from "../../banner/header";
+import { Header } from "../../../components/";
 import Footer from "../../footer/footer";
 import { ReactComponent as Detail } from "../svg/detail.svg";
 

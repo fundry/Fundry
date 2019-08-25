@@ -10,12 +10,13 @@ import {
   Signup,
   Form,
   Protected,
-  allFaq
+  allFaq,
+  Blog
 } from "./screens/index";
 import * as serviceWorker from "./serviceWorker";
 import { Router, Route, Switch } from "react-router";
 import { createBrowserHistory } from "history";
-import { AuthProvider } from "./screens/auth/protected/AuthContext";
+import { AuthProvider } from "./auth/protected/AuthContext";
 
 const history = createBrowserHistory();
 ReactDOM.render(
@@ -30,6 +31,8 @@ ReactDOM.render(
         <Route path="/signup" component={Signup} />
         <Route path="/reset" component={Reset} />
         <Route path="/faq" component={allFaq} />
+        <Route path="/blog" component={Blog} />
+
         <Protected path="/profile" component={Profile} />
       </Switch>
     </AuthProvider>

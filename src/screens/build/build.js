@@ -2,7 +2,7 @@ import React from "react";
 import Flex from "styled-flex-component";
 import styled from "styled-components";
 import { ReactComponent as Tools } from "./tools.svg";
-import useWindowWidth from "../hook_style";
+import useWindowWidth from "../../hook_style";
 
 const Build = () => {
   const Div = styled.div`

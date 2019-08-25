@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Footer from "../footer/footer";
-import Header from "../banner/header";
+import { Header } from "../../components/";
 import Flex from "styled-flex-component";
 import { Link } from "react-router-dom";
 import { ReactComponent as Intro } from "./svg/intro.svg";

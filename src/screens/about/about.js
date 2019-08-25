@@ -6,7 +6,7 @@ import { Grid } from "semantic-ui-react";
 import { ReactComponent as Bulb } from "./svg/top.svg";
 import { ReactComponent as Bottom } from "./svg/bottom.svg";
 import Flex from "styled-flex-component";
-import useWindowWidth from "../hook_style";
+import useWindowWidth from "../../hook_style";
 import Build from "../build/build";
 import Releases from "../recent/recent";
 import Support from "../support/support.edu";

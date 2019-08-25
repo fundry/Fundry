@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
 import { Customer, Form, Dev } from "../svg/index";
 import { Grid } from "semantic-ui-react";
 import Flex from "styled-flex-component";
 import { ReactComponent as Process } from "../svg/process.svg";
-import useWindowWidth from "../../hook_style";
+import useWindowWidth from "../../../hook_style";
 import { ReactComponent as Desktop } from "./desktop.svg";
 import Mobile from "./mobile";
 

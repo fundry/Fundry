@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../banner/header";
+import { Header } from "../../components/";
 import Footer from "../footer/footer";
 import { Image } from "react-bootstrap";
-import useWindowWidth from "../hook_style";
+import useWindowWidth from "../../hook_style";
 
 const Title = styled.h4`
   padding-right: 5%;

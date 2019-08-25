@@ -6,10 +6,10 @@ import Flex from "styled-flex-component";
 import { observer, inject } from "mobx-react";
 
 import Quote from "./text/quote";
-import Header from "./header";
 import Sponsors from ".././support/sponsors";
 import { ReactComponent as Image } from "./baner.svg";
-import useWindowWidth from "../hook_style";
+import useWindowWidth from "../../hook_style";
+import { Header } from "../../components/";
 
 // remove height property later to increase responsivness ...
 const Div = styled.div`
@@ -124,11 +124,15 @@ const Home = props => {
           <br /> <br />
         </Div>
       )}
-      {props.Store.count}
-      <button onClick={() => props.Store.increase}>click</button>
+
       <Sponsors />
     </div>
   );
 };
+
+/*
+   {props.Store.count}
+      <button onClick={() => props.Store.increase}>click</button>
+      */
 
 export default inject("Store")(observer(Home));

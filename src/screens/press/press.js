@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Grid } from "semantic-ui-react";
 import Flex from "styled-flex-component";
-import useWindowWidth from "../hook_style";
+import useWindowWidth from "../../hook_style";
 
 const Press = () => {
   const Head = styled.h2`

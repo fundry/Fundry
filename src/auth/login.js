@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../banner/header";
+import { Header } from "../components/";
 import Flex from "styled-flex-component";
 import styled from "styled-components";
 import { Card } from "react-bootstrap";

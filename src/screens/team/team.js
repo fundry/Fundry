@@ -5,7 +5,7 @@ import { Grid, Icon } from "semantic-ui-react";
 import Img from "react-image";
 import { Link } from "react-router-dom";
 import Flex from "styled-flex-component";
-import useWindowWidth from "../hook_style";
+import useWindowWidth from "../../hook_style";
 
 const Div = styled.div`
   margin-top : 3%
