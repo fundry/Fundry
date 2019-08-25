@@ -35,7 +35,9 @@ export default function home() {
 
   return (
     <div style={{ paddingTop: "3em", paddingRight: "20px" }}>
-      <Head> Opensource Products </Head>
+      <Head>
+        <b> Opensource </b> Products{" "}
+      </Head>
       <IconBody>
         <Flex justifyAround>
           <div>
